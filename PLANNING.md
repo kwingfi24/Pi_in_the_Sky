@@ -19,7 +19,9 @@ Engineering 4 - Project Proposal
 - Switch
 
 ## Diagrams
+### Project
 
+### Lauching Device
 
 ## Schedule
 - [ ] Initial Design (paper) including any measurements - Tues, Feb 8
@@ -28,21 +30,24 @@ Engineering 4 - Project Proposal
 - [ ] Lights and opening door - Thurs, Feb 17
 - [ ] Initial Design (CAD) including any measurements - Thurs, Feb 17
 - [ ] Working with no screen - Tues, Feb 22
-- [ ] Battery powered - 
-- [ ] Build prototype #1 - 
-- [ ] Testing that prototype - 
-- [ ] Tweaking design and/or code - 
-- [ ] Build prototype #2 - 
-- [ ] Testing that prototype - 
-- [ ] Tweaking design and/or code - 
-- [ ] Finalize CAD Design - 
-- [ ] Printing/Cutting - 
-- [ ] Wiring condensed - 
-- [ ] Diagram and commented code - 
-- [ ] Soldering - 
-- [ ] Assembly - 
-- [ ] Testing - 
-- [ ] Small tweaks (if any) - 
+- [ ] Battery powered - Thurs, Feb 24
+- [ ] Build prototype #1 - Thurs, Mar 3
+- [ ] Testing that prototype - Tues, Mar 8
+- [ ] Tweaking design and/or code - Mon, Mar 14
+- [ ] Build prototype #2 / Update prototype #1 - Tues, Mar 15
+- [ ] Testing that prototype - Thurs, Mar 17
+- [ ] Tweaking design and/or code - Mon, Mar 21
+- [ ] Finalize CAD Design - Mon, Mar 28
+- [ ] Wiring condensed - Tues, Mar 22
+- [ ] Diagram and commented code - Tues, Mar 22
+- [ ] Soldering - Mon, Mar 28
+- [ ] Build launcher prototype - Thurs, Mar 31
+- [ ] Testing launcher - Mon, Apr 4
+- [ ] Tweaking and retesting - Thurs, Apr 7 (Work on this until stuff is done printing/cutting)
+- [ ] Printing/Cutting - Thurs, Apr 7 (May change do to fast or slow printing/cutting)
+- [ ] Assembly - Tues, Apr 12
+- [ ] Testing and small tweaks - Thurs, May 12
+- [ ] Documantation and Github organizing/update or any final presentation parts - Thurs, May 19
 - [ ] Presenting finished product - 
 
 ## Block_Code_Diagram
