@@ -22,7 +22,7 @@ Engineering 4 - Project Proposal
 
 
 ## Schedule
-- [x] Initial Design (paper) including any measurements - Tues, Feb 8
+- [ ] Initial Design (paper) including any measurements - Tues, Feb 8
 - [ ] Accelerometer and OLED Display - Mon, Feb 14
 - [ ] Pi Camera with button - Thurs, Feb 17
 - [ ] Lights and opening door - Thurs, Feb 17
