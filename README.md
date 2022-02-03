@@ -18,29 +18,6 @@ Engineering 4 - Project
 ### Diagrams
 
 
-### Schedule
-- [ ] Initial Design (paper) including any measurements - Tues, Feb 8
-- [ ] Accelerometer and OLED Display - Mon, Feb 14
-- [ ] Pi Camera with button - Thurs, Feb 17
-- [ ] Lights and opening door - Thurs, Feb 17
-- [ ] Initial Design (CAD) including any measurements - Thurs, Feb 17
-- [ ] Working with no screen - Tues, Feb 22
-- [ ] Battery powered - 
-- [ ] Build prototype #1 - 
-- [ ] Testing that prototype - 
-- [ ] Tweaking design and/or code - 
-- [ ] Build prototype #2 - 
-- [ ] Testing that prototype - 
-- [ ] Tweaking design and/or code - 
-- [ ] Finalize CAD Design - 
-- [ ] Printing/Cutting - 
-- [ ] Wiring condensed - 
-- [ ] Diagram and commented code - 
-- [ ] Soldering - 
-- [ ] Assembly - 
-- [ ] Testing - 
-- [ ] Small tweaks (if any) - 
-- [ ] Presenting finished product - 
 ### Block Code Diagram
 #### Accelerometer and OLED Display
 Ran similarly as the Headless Accelerometer assignment, but instead of displaying the reading, it shows the parabola of the launch. Using the reading, it will “graph” the parabola by putting dots on the screen and moving a little right each time without clearing the screen. Under the graph it will be showing the highest height it’s reached so far, meaning it will stop at when it reached its climax. To do this, the bottom area will have to be cleared without erasing the graph. *If there is a way to store the acceleration readings and send them to github or something, we should try it. ***If the project  accidentally turns upside down, will this mess up the reading?
@@ -54,6 +31,5 @@ This will act as a way to open the door(s) on the bottom of the pi and the apex 
 This button will shutdown the pi before turning it off. A button will be needed because of the lack of a screen and keyboard.
 ####On/Off Switch
 Obviously turns the 
-### Risk Mitigation
 
 
