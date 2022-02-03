@@ -56,9 +56,9 @@ This is one thing that will happen when the pi believes it has reached its apex.
 This will act as a way to open the door(s) on the bottom of the pi and the apex too. This will be pretty easy to set up. We do need to take weight into consideration along with the possibility of the objects falling out interfering with the fall of the actual pi. The door will need to be open long enough to drop, but be closed by the time it hits the ground. This could be difficult depending on how fast the project will fall.
 #### Shutdown Button
 This button will shutdown the pi before turning it off. A button will be needed because of the lack of a screen and keyboard.
-####On/Off Switch
-Obviously turns the 
+#### On/Off Switch
+Obviously turns the project off and will need to connect and unconnect the battery to the rest of the device.
 
 ## Risk_Mitigation
-
+The only real risks I see is possibly with the soldering or launching/testing of the launching. As of right now, I’m not completely sure how exactly we are going to get the project up in the air. Depending on how we do it, we can be careful and cautious in many ways such as standing away from lanchings and making sure no pieces are going to fly off. With having things fall when the project hits the apexs, could also have a bit of a risk becuase of what and how fast the object is falling. To combat this, the things falling should be smaller and lighter objects, possibly ribbons or something of that sort.
 
