@@ -1,5 +1,5 @@
 # Planning
-Engineering 4 - Project
+Engineering 4 - Project Proposal
 
 ## Table of Contents
 * [Bill of Materials](#Bill_of_Materials)
@@ -22,7 +22,7 @@ Engineering 4 - Project
 
 
 ## Schedule
-- [ ] Initial Design (paper) including any measurements - Tues, Feb 8
+- [x] Initial Design (paper) including any measurements - Tues, Feb 8
 - [ ] Accelerometer and OLED Display - Mon, Feb 14
 - [ ] Pi Camera with button - Thurs, Feb 17
 - [ ] Lights and opening door - Thurs, Feb 17
