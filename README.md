@@ -18,6 +18,14 @@ Engineering 4 - Project
 ### Diagrams
 
 
+### Milestones
+- [ ] Brainstorm ideas
+- [ ] Develop an initial design (pencil and paper, CAD, etc.)
+- [ ] Construct a prototype
+- [ ] Test your design
+- [ ] Refine/optimize your design
+- [ ] Present finished product
+
 ### Block Code Diagram
 #### Accelerometer and OLED Display
 Ran similarly as the Headless Accelerometer assignment, but instead of displaying the reading, it shows the parabola of the launch. Using the reading, it will “graph” the parabola by putting dots on the screen and moving a little right each time without clearing the screen. Under the graph it will be showing the highest height it’s reached so far, meaning it will stop at when it reached its climax. To do this, the bottom area will have to be cleared without erasing the graph. *If there is a way to store the acceleration readings and send them to github or something, we should try it. ***If the project  accidentally turns upside down, will this mess up the reading?
