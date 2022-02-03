@@ -24,6 +24,7 @@ Engineering 4 - Project Proposal
 ### Lauching Device
 
 ## Schedule
+We have planned for this project to last for 15 and a half weeks. Starting on Feb 1 (Including planning time) and ending on May 19. Presentation day is _.
 - [ ] Initial Design (paper) including any measurements - Tues, Feb 8
 - [ ] Accelerometer and OLED Display - Mon, Feb 14
 - [ ] Pi Camera with button - Thurs, Feb 17
