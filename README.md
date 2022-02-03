@@ -37,7 +37,7 @@ This is one thing that will happen when the pi believes it has reached its apex.
 This will act as a way to open the door(s) on the bottom of the pi and the apex too. This will be pretty easy to set up. We do need to take weight into consideration along with the possibility of the objects falling out interfering with the fall of the actual pi. The door will need to be open long enough to drop, but be closed by the time it hits the ground. This could be difficult depending on how fast the project will fall.
 #### Shutdown Button
 This button will shutdown the pi before turning it off. A button will be needed because of the lack of a screen and keyboard.
-####On/Off Switch
-Obviously turns the 
+#### On/Off Switch
+Obviously turns the project off and will need to connect and unconnect the battery to the rest of the device.
 
 
