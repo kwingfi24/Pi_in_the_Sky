@@ -11,15 +11,17 @@ Engineering 4 - Project
 - OLED Display
 - Pi Camera
 - 2 Buttons
-- 3-4 LEDS
-- Servo?
+- 3 LEDS
+- 2 Servos
 - Switch
 
 ### Diagrams
+Project
 
+Launcher
 
 ### Milestones
-- [ ] Brainstorm ideas
+- [x] Brainstorm ideas
 - [ ] Develop an initial design (pencil and paper, CAD, etc.)
 - [ ] Construct a prototype
 - [ ] Test your design
