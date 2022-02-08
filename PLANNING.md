@@ -14,14 +14,13 @@ Engineering 4 - Project Proposal
 - OLED Display
 - Pi Camera
 - 2 Buttons
-- 3 LEDS
+- 2 LEDS
 - 2 Servos
 - Switch
+- Rubberband
 
 ## Diagrams
-### Project
 
-### Lauching Device
 
 ## Schedule
 We have planned for this project to last for 15 and a half weeks. Starting on Feb 1 (Including planning time) and ending on May 19. Presentation day is _.
