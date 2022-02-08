@@ -17,9 +17,7 @@ Engineering 4 - Project
 - Rubberband
 
 ### Diagrams
-#### Project
 
-#### Launcher
 
 ### Milestones
 - [x] Brainstorm ideas
