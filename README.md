@@ -11,9 +11,10 @@ Engineering 4 - Project
 - OLED Display
 - Pi Camera
 - 2 Buttons
-- 3 LEDS
+- 2 LEDS
 - 2 Servos
 - Switch
+- Rubberband
 
 ### Diagrams
 #### Project
