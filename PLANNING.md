@@ -20,7 +20,7 @@ Engineering 4 - Project Proposal
 - Rubberband
 
 ## Diagrams
-
+![image](https://user-images.githubusercontent.com/60272021/153009169-bfc58da1-c097-4e1e-9e28-fedd38d4bfe2.png)
 
 ## Schedule
 We have planned for this project to last for 15 and a half weeks. Starting on Feb 1 (Including planning time) and ending on May 19. Presentation day is _.
