@@ -28,7 +28,12 @@ In this project we will be making a plane with wings that are like a hang glider
 - 3D printed nose
 
 ## Diagrams
+Paper
+
 ![image](https://user-images.githubusercontent.com/60272021/153009169-bfc58da1-c097-4e1e-9e28-fedd38d4bfe2.png)
+
+CAD
+link: 
 
 ## Schedule
 We have planned for this project to last for 15 and a half weeks. Starting on Feb 1 (Including planning time) and ending on May 19. Presentation day is _.
