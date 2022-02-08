@@ -17,7 +17,7 @@ Engineering 4 - Project
 - Rubberband
 
 ### Diagrams
-
+![image](https://user-images.githubusercontent.com/60272021/153009169-bfc58da1-c097-4e1e-9e28-fedd38d4bfe2.png)
 
 ### Milestones
 - [x] Brainstorm ideas
