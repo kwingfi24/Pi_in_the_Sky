@@ -41,8 +41,8 @@ Onshape link:
 ## Schedule
 We have planned for this project to last for 15 and a half weeks. Starting on Feb 1 (Including planning time) and ending on May 19. Presentation day is _.
 - [x] Initial Design (paper) including rough measurements - Tues, Feb 8
-- [ ] Initial Design (CAD) including any measurements - Thurs, Feb 10
 - [ ] Accelerometer and OLED Display - Tues, Feb 15
+- [ ] Initial Design (CAD) including any measurements - Tues, Feb 15
 - [ ] Pi Camera with button - Thurs, Feb 17
 - [ ] Lights and opening door - Thurs, Feb 17
 - [ ] Working with no screen - Tues, Feb 22
