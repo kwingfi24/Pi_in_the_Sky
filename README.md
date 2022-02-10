@@ -38,17 +38,6 @@ Materials
 - Wood for plane body
 - 3D printed nose
 
-### Diagrams
-Paper:
-
-![image](https://user-images.githubusercontent.com/60272021/153009169-bfc58da1-c097-4e1e-9e28-fedd38d4bfe2.png)
-
-CAD:
-
-image
-
-Onshape link:
-
 ### Milestones
 - [x] Brainstorm ideas
 - [X] Develop an initial design (pencil and paper, CAD, etc.)
