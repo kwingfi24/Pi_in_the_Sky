@@ -51,7 +51,7 @@ Onshape link:
 
 ### Milestones
 - [x] Brainstorm ideas
-- [ ] Develop an initial design (pencil and paper, CAD, etc.)
+- [X] Develop an initial design (pencil and paper, CAD, etc.)
 - [ ] Construct a prototype
 - [ ] Test your design
 - [ ] Refine/optimize your design
