@@ -55,7 +55,7 @@ x = padding
 # Load default font.
 font = ImageFont.load_default()
 
-
+#testing to see how clearing just the bottom works
 draw.rectangle((0,0,width,height), outline=225, fill=225)
 draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=225)
 
