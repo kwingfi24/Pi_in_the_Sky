@@ -61,8 +61,9 @@ We have planned for this project to last for 15 and a half weeks. Starting on Fe
 - [ ] Initial Design (CAD) including any measurements - Tues, Feb 15
 - [ ] Pi Camera with button - Thurs, Feb 17
 - [ ] Lights and opening door - Thurs, Feb 17
-- [ ] Working with no screen - Tues, Feb 22
-- [ ] Battery powered - Thurs, Feb 24
+- [ ] Working with no screen - Thurs, Feb 24
+- [ ] Battery powered - Mon, Feb 28
+- [ ] Putting pieces of the code together - Tues, Mar 1  
 - [ ] Build prototype #1 - Thurs, Mar 3
 - [ ] Testing that prototype - Tues, Mar 8
 - [ ] Tweaking design and/or code - Mon, Mar 14
