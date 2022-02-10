@@ -7,7 +7,21 @@ Engineering 4 - Project
 
 ## Planning
 ### Scope and Function
-In this project we will be making a plane with wings that are like a hang glider. Within this boy, there will be a pi along with some other things to take some data of the flight as well as pictures. The OLED Display and accelerometer will be used to graph the movement of the plane glider while a pi camera will be taking pictures of the ground from the bottom of the glider. For the wings, we will be using cardboard. Most of the body of the plane will be in wood, but with the nose 3D printed to be in a more rounded shape. We are making the plane glider as small as possible to keep it light and easy to launch, so we will not be using a lot of cardboard or the 3D printer. The most material will be the wood due to the octogonish shape of the plane glider. Wood is being used rather than acrylic so that it can withstand a bit more of an impact. However, due to the size, we should be able to get by with only using 1 or 2 sheets of acrylic. We need to learn a bit more about how the accelerometer and OLED display work. Graphing the flight without filling the screen could be a problem. To accommodate for this, we might need a bigger OLED screen, but I’m not seeing any in the lab. Instead we might need to graph fewer points rather than all of them to not fill the screen. We also will need to learn how to have things falling from the plane glider without interfering with the flight. This should be combated with them being released facing the opposite direction of the plane glider’s flight. If this does not work, changes will need to be made with either a change of what is dropping, how much is dropping, and the falling speed/time of the objects falling. The definition of success for this project will be growing and learning about things we didn’t previously know, having a working project by the middle of May, and getting some awesome pictures from the flight.
+#### How will the final product function?
+
+In this project we will be making a plane with hang glider like wings. Within the plane glider, there will be a pi along with some other things to take some data of the flight as well as pictures. The OLED Display and accelerometer will be used to graph the movement of the plane glider while a pi camera will be taking pictures of the ground from the bottom of the glider. 
+
+#### What materials will be needed and how much?
+
+For the wings, we will be using cardboard. Most of the body of the plane will be in wood, but with a 3D printed nose in order for it to be in a more rounded shape. We are making the plane glider as small as possible to keep it light and easy to launch, so we will not be using a lot of materials. The most material will be the wood due to the octogonish shape of the plane glider. However, due to the size, we should be able to get by with only a sheet or two of wood with the same thickness as the acrylic. Wood is being used rather than acrylic so that it can withstand a bit more of an impact. 
+
+#### What do you still need to learn for the project?
+
+We need to learn a bit more about how the accelerometer and OLED display work. Graphing the flight without filling the screen could be a problem. To accommodate for this, we might need a bigger OLED screen, but I’m not seeing any in the lab. Instead we might need to graph fewer points rather than all of them to not fill the screen. We also will need to learn how to have things falling from the plane glider without interfering with the flight. This should be combated with them being released facing the opposite direction of the plane glider’s flight. If this does not work, changes will need to be made with either a change of what is dropping, how much is dropping, and the falling speed/time of the objects falling. 
+
+#### What is the definition for "success" in the project?
+
+The definition of success for this project will be growing and learning about things we didn’t previously know, having a working project by the middle of May, and getting some awesome pictures from the flight.
 
 ### Bill of Materials
 - LSM303
@@ -19,8 +33,8 @@ In this project we will be making a plane with wings that are like a hang glider
 - Switch
 - Rubberband
 
-
-- Cardboard material or wings
+Materials
+- Cardboard for wings
 - Wood for plane body
 - 3D printed nose
 
