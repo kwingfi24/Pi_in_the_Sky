@@ -49,8 +49,7 @@ Paper:
 ![image](https://user-images.githubusercontent.com/60272021/153009169-bfc58da1-c097-4e1e-9e28-fedd38d4bfe2.png)
 
 CAD:
-
-![image](https://https://github.com/kwingfi24/Pi_in_the_Sky/blob/main/Screenshot%202022-02-10%209.57.14%20AM.png)
+<img src="https://github.com/kwingfi24/Pi_in_the_Sky/blob/main/Screenshot%202022-02-10%209.57.14%20AM.png?raw=true">
 
 image
 
