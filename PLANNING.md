@@ -28,20 +28,23 @@ In this project we will be making a plane with wings that are like a hang glider
 - 3D printed nose
 
 ## Diagrams
-Paper
+Paper:
 
 ![image](https://user-images.githubusercontent.com/60272021/153009169-bfc58da1-c097-4e1e-9e28-fedd38d4bfe2.png)
 
-CAD
-link: 
+CAD:
+
+image
+
+Onshape link: 
 
 ## Schedule
 We have planned for this project to last for 15 and a half weeks. Starting on Feb 1 (Including planning time) and ending on May 19. Presentation day is _.
-- [x] Initial Design (paper) including any measurements - Tues, Feb 8
-- [ ] Accelerometer and OLED Display - Mon, Feb 14
+- [x] Initial Design (paper) including rough measurements - Tues, Feb 8
+- [ ] Initial Design (CAD) including any measurements - Thurs, Feb 10
+- [ ] Accelerometer and OLED Display - Tues, Feb 15
 - [ ] Pi Camera with button - Thurs, Feb 17
 - [ ] Lights and opening door - Thurs, Feb 17
-- [ ] Initial Design (CAD) including any measurements - Thurs, Feb 17
 - [ ] Working with no screen - Tues, Feb 22
 - [ ] Battery powered - Thurs, Feb 24
 - [ ] Build prototype #1 - Thurs, Mar 3
