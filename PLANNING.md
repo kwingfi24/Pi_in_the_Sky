@@ -23,7 +23,8 @@ In this project we will be making a plane with wings that are like a hang glider
 - Switch
 - Rubberband
 
-- Cardboard material or wings
+Materials
+- Cardboard for wings
 - Wood for plane body
 - 3D printed nose
 
