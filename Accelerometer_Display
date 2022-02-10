@@ -56,7 +56,9 @@ x = padding
 font = ImageFont.load_default()
 
 
-while True:    
-    draw.rectangle((0,0,width,height), outline=225, fill=225)
+draw.rectangle((0,0,width,height), outline=225, fill=225)
+draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=225)
 
+disp.image(image)
+disp.display()
     
