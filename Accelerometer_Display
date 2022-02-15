@@ -95,6 +95,6 @@ while True:
     # Display image.
     disp.image(image)
     disp.display()
-    # clear just the bottom leaving the points there
+    # clear just the bottom leaving the points there to look at
     draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
 
