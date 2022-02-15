@@ -28,7 +28,7 @@ def quotient(accel_z, scale1):
     return (accel_z / scale1)
     
 def direction(x):
-    return (quotient(accel_x, scale) * 1.5)
+    return (quotient(accel_x, scale) * 2.5)
 def direction(height):
     return (quotient(accel_z, scale1) * 1.5)
     
