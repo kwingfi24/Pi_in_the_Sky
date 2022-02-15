@@ -29,7 +29,7 @@ def quotient(accel_z, scale1):
     
 def direction(x):
     return (quotient(accel_x, scale) * 1.5)
-def direction(y):
+def direction(height):
     return (quotient(accel_z, scale1) * 1.5)
     
 # Raspberry Pi pin configuration:
@@ -78,7 +78,7 @@ while True:
 
     # change in x and z values
     a = direction(x)
-    b = direction(y)
+    b = direction(height)
     
     # "Graphing" the x values by drawing circles/plotting point every second
 #    draw.ellipse((x+50+a, top+25, x+shape_width+50+a, bottom-25), outline=225, fill=0)
