@@ -19,7 +19,7 @@ sleep(3)
 
 # while loop to make it repeat until stopped by a keyboard entry
 while True:
-    camera.capture('Animation_pic/frame%03d.jpg' % frame) #adding numbers to pictures
+    camera.capture('pics/frame%03d.jpg' % frame) #adding numbers to pictures
     frame += 1
     sleep(.5)
     # stopping the program with CTRL+C
