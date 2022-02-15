@@ -23,6 +23,7 @@ while True:
     frame += 1
     sleep(.5)
     # stopping the program with CTRL+C
-    except button.wait_for_press():
+    
+    button.wait_for_press():
         camera.stop_preview()
         break
