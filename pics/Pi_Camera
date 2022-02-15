@@ -25,5 +25,5 @@ while True:
     # stopping the program with CTRL+C
     
     button.wait_for_press()
-        camera.stop_preview()
-        break
+    camera.stop_preview()
+    break
