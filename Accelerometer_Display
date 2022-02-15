@@ -85,7 +85,7 @@ while True:
     draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
     draw.text((x+50, bottom-10), f'Y: {(round (quotient(accel_y, scale), 2))}', font=font, fill=255)
     # Wait half a second and repeat.
-    time.sleep(1)
+    time.sleep(.5)
     # Display image.
     disp.image(image)
     disp.display()
