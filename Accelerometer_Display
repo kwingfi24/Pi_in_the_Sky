@@ -84,7 +84,7 @@ while True:
     # "Graphing" the x values by drawing circles/plotting point every second
 #    draw.ellipse((x+50+a, top+25, x+shape_width+50+a, bottom-25), outline=225, fill=0) # x values
 #    draw.ellipse((x+50, top+b, x+shape_width+50, top+shape_height+b), outline=225, fill=0) # z values
-    draw.ellipse((x+50+a, top+b, x+shape_width+50+a, top+shape_height+b), outline=225, fill=0) # both values
+    draw.ellipse((x+a, top+b, x+shape_width+a, top+shape_height+b), outline=225, fill=0) # both values
     
     
     # Write readings for x and y
