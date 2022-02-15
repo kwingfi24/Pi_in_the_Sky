@@ -17,12 +17,11 @@ camera.start_preview()
 button.wait_for_press()
 sleep(3)
 
-# while loop to make it repeat until stopped by a keyboard entry
+# while loop to make it repeat until stopped by a button press
 while True:
     camera.capture('pics/frame%03d.jpg' % frame) #adding numbers to pictures
     frame += 1
     sleep(.5)
-    # stopping the program with CTRL+C
     
     button.wait_for_press()
     camera.stop_preview()
