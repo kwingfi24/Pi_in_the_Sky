@@ -62,7 +62,7 @@ We have planned for this project to last for 15 and a half weeks. Starting on Fe
 - [ ] Accelerometer and OLED Display - Tues, Feb 15
 - [ ] Initial Design (CAD) including any measurements - Tues, Feb 15
 - [ ] Pi Camera with button - Thurs, Feb 17
-- [ ] Lights and opening door - Thurs, Feb 17
+- [ ] Lights and opening door - Mon, Feb 21
 - [ ] Working with no screen - Thurs, Feb 24
 - [ ] Battery powered - Mon, Feb 28
 - [ ] Putting pieces of the code together - Tues, Mar 1  
