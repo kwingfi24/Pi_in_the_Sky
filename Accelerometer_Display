@@ -83,7 +83,7 @@ while True:
     
     # "Graphing" the x values by drawing circles/plotting point every second
 #    draw.ellipse((x+50+a, top+25, x+shape_width+50+a, bottom-25), outline=225, fill=0)
-    draw.ellipse((x+50, top+shape_height+b, x+shape_width+50, bottom-b), outline=225, fill=0)
+    draw.ellipse((x+50, top+b, x+shape_width+50, bottom-shape_height-b), outline=225, fill=0)
     
     # Write readings for x and y
     draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
