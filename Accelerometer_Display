@@ -28,7 +28,7 @@ def quotient(accel_z, scale1):
     return (accel_z / scale1)
     
 def direction(x):
-    return (quotient(accel_x, scale) * 2.5)
+    return (quotient(accel_x, scale) * 4)
 def direction(height):
     return (quotient(accel_z, scale1) * 1.5)
     
@@ -89,7 +89,7 @@ while True:
     
     # Write readings for x and y
     draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
-    draw.text((x+50, bottom-10), f'Y: {(round (quotient(accel_y, scale), 2))}', font=font, fill=255)
+    draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
     # Wait half a second and repeat.
     time.sleep(.5)
     # Display image.
