@@ -72,8 +72,8 @@ while True:
     mag_x, mag_y, mag_z = mag
 
     # Write five lines of text(including both the heading and readings
-    draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 3))}',  font=font, fill=255)
-    draw.text((x+30, bottom-10), f'Y: {(round (quotient(accel_y, scale), 3))}', font=font, fill=255)
+    draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
+    draw.text((x+50, bottom-10), f'Y: {(round (quotient(accel_y, scale), 2))}', font=font, fill=255)
     # Wait half a second and repeat.
     time.sleep(1)
     # Display image.
