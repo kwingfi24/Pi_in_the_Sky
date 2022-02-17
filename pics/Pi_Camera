@@ -15,6 +15,6 @@ with picamera.PiCamera() as camera:
     for filename in camera.capture_continuous('img{counter:03d}.jpg'):
         print('Captured %s' % filename)
         time.sleep(15) # wait 15 seconds so 4 images a second
-button.wait_for_press()
-camera.stop_preview()
-    break
+# button.wait_for_press()
+# camera.stop_preview()
+#    break
