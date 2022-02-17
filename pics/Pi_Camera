@@ -6,10 +6,15 @@
 
 import time
 import picamera
+from gpiozero import Button
 
+button.wait_for_press()
 with picamera.PiCamera() as camera:
     camera.start_preview()
     time.sleep(2)
     for filename in camera.capture_continuous('img{counter:03d}.jpg'):
         print('Captured %s' % filename)
         time.sleep(15) # wait 15 seconds so 4 images a second
+button.wait_for_press()
+camera.stop_preview()
+break
