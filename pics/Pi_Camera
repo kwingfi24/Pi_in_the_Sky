@@ -21,4 +21,4 @@ with picamera.PiCamera() as camera:
         time.sleep(5) # wait 5 seconds so 20 images a minute
 
 button.when_pressed = camera.stop_preview
-break
+    break
