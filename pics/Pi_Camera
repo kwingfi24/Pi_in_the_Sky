@@ -16,5 +16,5 @@ with picamera.PiCamera() as camera:
         print('Captured %s' % filename)
         time.sleep(15) # wait 15 seconds so 4 images a second
 button.wait_for_press()
-    camera.stop_preview()
+camera.stop_preview()
     break
