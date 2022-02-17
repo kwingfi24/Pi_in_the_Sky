@@ -4,25 +4,19 @@
 # of the flight from the bottom of the plane.
 
 
-from picamera import PiCamera
-from time import sleep
-from gpiozero import Button
+import time
+import picamera
 
-button = Button(17)
-camera = PiCamera()
-
-frame = 1
-
-camera.start_preview()
-button.wait_for_press()
-sleep(3)
-
-# while loop to make it repeat until stopped by a button press
-while True:
-    camera.capture('pics/frame%03d.jpg' % frame) #adding numbers to pictures
-    frame += 1
-    sleep(.5)
-    
-    button.wait_for_press()
-    camera.stop_preview()
-    break
+with picamera.PiCamera() as camera:
+    camera.resolution = (1280, 720)
+    camera.framerate = 30
+    # Wait for the automatic gain control to settle
+    time.sleep(2)
+    # Now fix the values
+    camera.shutter_speed = camera.exposure_speed
+    camera.exposure_mode = 'off'
+    g = camera.awb_gains
+    camera.awb_mode = 'off'
+    camera.awb_gains = g
+    # Finally, take several photos with the fixed settings
+    camera.capture_sequence(['image%02d.jpg' % i for i in range(10)])
