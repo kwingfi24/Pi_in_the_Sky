@@ -23,6 +23,6 @@ while True:
                 print('Captured %s' % filename)
                 time.sleep(2) # wait 2 seconds so 30 images a minute
     # stopping the program with a button hopefully
-    except button.is_pressed:
+    except button.when_pressed:
         camera.stop_preview()
         break
