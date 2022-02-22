@@ -24,7 +24,7 @@ def stop():
 
 # program start with a button press
 button.when_pressed = capture
-button.when_pressed = break()
+button.when_pressed = stop
 
 
 
