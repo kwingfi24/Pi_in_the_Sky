@@ -23,7 +23,7 @@ def stop():
     pause()
 
 # program start with a button press
-button.when_pressed = capture
+button.wait_for_press = capture
 button.when_pressed = stop
 
 
