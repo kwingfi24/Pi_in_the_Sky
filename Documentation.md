@@ -11,3 +11,15 @@ Kaitlyn - I got the camera working half way today. I will have to work over the 
 
 
 Christian - 
+
+### Feb 22, 2022
+Kaitlyn - 
+
+
+Christian -
+
+### Feb 
+Kaitlyn - 
+
+
+Christian -
