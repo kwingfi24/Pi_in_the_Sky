@@ -61,8 +61,8 @@ We have planned for this project to last for 15 and a half weeks. Starting on Fe
 - [x] Initial Design (paper) including rough measurements - Tues, Feb 8
 - [x] Accelerometer and OLED Display - Tues, Feb 15
 - [x] Initial Design (CAD) including any measurements - Thurs, Feb 17
-- [ ] Pi Camera with button - Thurs, Feb 17
-- [ ] Lights and opening door - Mon, Feb 21
+- [ ] Pi Camera with button - Tues, Feb 22
+- [ ] Testing flying capability of original design - Thurs, Feb 24
 - [ ] Working with no screen - Thurs, Feb 24
 - [ ] Battery powered - Mon, Feb 28
 - [ ] Putting pieces of the code together - Tues, Mar 1  
