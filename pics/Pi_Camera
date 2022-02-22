@@ -14,15 +14,12 @@ button = Button(17)
 button.wait_for_press()
 
 
-while True:
-    try:
-        with picamera.PiCamera() as camera:
-            camera.start_preview()
-            time.sleep(2)
-            for filename in camera.capture_continuous('img{counter:03d}.jpg'):
-                print('Captured %s' % filename)
-                time.sleep(2) # wait 2 seconds so 30 images a minute
-    # stopping the program with a button hopefully
-    except button.when_pressed:
-        camera.stop_preview()
-        break
+with picamera.PiCamera() as camera:
+    camera.start_preview()
+    time.sleep(2)
+    for filename in camera.capture_continuous('img{counter:03d}.jpg'):
+        print('Captured %s' % filename)
+        time.sleep(2) # wait 2 seconds so 30 images a minute
+        button.when_pressed:
+            camera.stop_preview()
+            break
