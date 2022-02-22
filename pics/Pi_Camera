@@ -12,7 +12,7 @@ button = Button(17)
 
 def stop():
     camera.stop_preview()
-    break
+        break
 
 
 # program start with a button press
