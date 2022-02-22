@@ -18,8 +18,27 @@ Kaitlyn -
 
 Christian -
 
-### Feb 
+### Feb 24, 2022
 Kaitlyn - 
 
 
 Christian -
+
+### Feb 28, 2022 
+Kaitlyn - 
+
+
+Christian -
+
+### Mar 1, 2022 
+Kaitlyn - 
+
+
+Christian -
+
+### Mar 3, 2022 
+Kaitlyn - 
+
+
+Christian -
+
