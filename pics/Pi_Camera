@@ -3,7 +3,6 @@
 # The camera will take pictures every half second for the entirety
 # of the flight from the bottom of the plane.
 
-
 import time
 from picamera import PiCamera
 from gpiozero import Button
@@ -12,7 +11,6 @@ from signal import pause
 button = Button(17)
 camera = PiCamera()
 
-
 def capture():
     with camera:
         camera.start_preview()
@@ -20,10 +18,14 @@ def capture():
         for filename in camera.capture_continuous('img{counter:03d}.jpg'):
             print('Captured %s' % filename)
             time.sleep(2) # wait 2 seconds so 30 images a minute
+def stop():
+    camera.stop_preview()
+    break
 
 # program start with a button press
 button.when_pressed = capture
 button.when_pressed = break()
+
 
 
 
