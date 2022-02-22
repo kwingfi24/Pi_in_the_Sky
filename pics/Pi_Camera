@@ -20,7 +20,7 @@ def capture():
             time.sleep(2) # wait 2 seconds so 30 images a minute
 def stop():
     camera.stop_preview()
-    break
+    pause()
 
 # program start with a button press
 button.when_pressed = capture
