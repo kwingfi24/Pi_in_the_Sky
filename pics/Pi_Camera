@@ -10,18 +10,23 @@ from gpiozero import Button
 
 button = Button(17)
 
-def stop():
-    break
+
+def capture():
+    timestamp = datetime.now().isoformat()
+    camera.capture('/home/pi/%s.jpg' % timestamp)
+
+button.when_pressed = capture
+
+pause()
+
+# # program start with a button press
+# button.wait_for_press()
 
 
-# program start with a button press
-button.wait_for_press()
-
-
-with picamera.PiCamera() as camera:
-    camera.start_preview()
-    time.sleep(2)
-    for filename in camera.capture_continuous('img{counter:03d}.jpg'):
-        print('Captured %s' % filename)
-        time.sleep(2) # wait 2 seconds so 30 images a minute
-        button.when_pressed = stop
+# with picamera.PiCamera() as camera:
+#     camera.start_preview()
+#     time.sleep(2)
+#     for filename in camera.capture_continuous('img{counter:03d}.jpg'):
+#         print('Captured %s' % filename)
+#         time.sleep(2) # wait 2 seconds so 30 images a minute
+#         button.when_pressed = stop
