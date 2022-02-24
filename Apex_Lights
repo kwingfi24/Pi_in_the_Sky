@@ -1,0 +1,6 @@
+# Started Feb 24
+# Finished by Feb 28
+# When the plane reaches its apex, there are going to be three lights on each wing (total of 6)
+# They will be blinking in a pattern. The pattern will be 3, 1, 2, 3 and 1, 2, and all
+# setup of lights will be (3,2,1,plane,1,2,3)
+
