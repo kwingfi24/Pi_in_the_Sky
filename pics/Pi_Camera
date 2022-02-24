@@ -15,9 +15,8 @@ camera = PiCamera()
 # program start with a button press
 button.wait_for_press
 
-raspistill -t 600000 -tl 10000 -o image_num_%03d_today.jpg -l latest.jpg
-
-
+with picamera.PiCamera() as camera:
+    camera.start_preview()
 
 # continuosly running (just n case it's needed)
 # with picamera.PiCamera() as camera:
@@ -26,3 +25,6 @@ raspistill -t 600000 -tl 10000 -o image_num_%03d_today.jpg -l latest.jpg
     # for filename in camera.capture_continuous('img{counter:03d}.jpg'):
       #  print('Captured %s' % filename)
        # time.sleep(2) # wait 2 seconds so 30 images a minute
+
+
+# taking a break from this. right now "raspistill -t 6000 -tl 1000 -o image_num_%03d_today.jpg -l latest.jpg" getting typed in works
