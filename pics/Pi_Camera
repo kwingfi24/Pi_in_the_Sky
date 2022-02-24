@@ -3,6 +3,26 @@
 # The camera will take pictures every half second for the entirety
 # of the flight from the bottom of the plane.
 
+
+
+
+raspistill -t 6000 -tl 1000 -o image_num_%03d_today.jpg -l latest.jpg
+
+
+
+
+#pic every second for 6 seconds
+
+
+
+
+
+
+
+
+#Below is what I was working on in the past
+# might revisit
+
 import time
 from picamera import PiCamera
 from gpiozero import Button
