@@ -19,7 +19,7 @@ Kaitlyn - I tried different methods such as while loops and defining different t
 Christian -
 
 ### Feb 24, 2022
-Kaitlyn - My idea from Tuesday worked. I found this code from https://www.raspberrypi.com/documentation/accessories/camera.html and it has the pi camera take a picture eafter a certain amount of time (I have it set to every two seconds right now) for a certain amount of time (I have it set for 20 seconds for testing at the moment). The time between each photo and how long it runs for will depend on how long the plane is in the air.
+Kaitlyn - 
 
 
 Christian -
