@@ -4,3 +4,4 @@
 # They will be blinking in a pattern. The pattern will be 3, 1, 2, 3 and 1, 2, and all
 # setup of lights will be (3,2,1,plane,1,2,3)
 
+# LED Pins 26, 19, 13, 6, 5, 22
