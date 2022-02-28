@@ -25,8 +25,7 @@ Kaitlyn - My idea from Tuesday worked. I found this code from https://www.raspbe
 Christian -
 
 ### Feb 28, 2022 
-Kaitlyn - 
-
+Kaitlyn - Today I got the LEDs working and blinking in the way I want. To do this in a simplified way rather than trying to code each light individually, I used a LEDBoard to control them all at once. I'm going to start looking at the code as a whole now, and go back to the pi camera that was giving me so much trouble. So far I think I made the schedule a bit wrong. I should have allowed more time for the actual coding and designing part, butwe aren't too far of course from were we were planning to be at this point in time. Our design has also changed. We are getting rid of the door and falling things, so as of right now the only thing that will happen are the lights going off. Something might need to be added, but that hasn't been decided yet.
 
 Christian -
 
