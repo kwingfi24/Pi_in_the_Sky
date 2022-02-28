@@ -7,32 +7,22 @@
 # LED Pins 26, 19, 13, 6, 5, 22
 
 
-# from gpiozero import LEDBoard
-# from time import sleep
-# from signal import pause
-
-# leds = LEDBoard(26, 19, 13, 6, 5, 22)
-
-# leds.on()
-# sleep(1)
-# leds.off()
-# sleep(1)
-# leds.value = (1, 0, 0, 0, 0, 1)
-# sleep(1)
-# leds.value = (0, 0, 1, 1, 0, 0)
-# sleep(1)
-# leds.value = (0, 1, 0, 0, 1, 0)
-# sleep(1)
-# leds.blink()
-
-# pause()
-
-
 from gpiozero import LEDBoard
+from time import sleep
 from signal import pause
 
-leds = LEDBoard(5, 6, 13, 19, 26, pwm=True)
+leds = LEDBoard(26, 19, 13, 6, 5, 22)
 
-leds.value = (0.2, 0.4, 0.6, 0.8, 1.0)
+leds.on()
+sleep(1)
+leds.off()
+sleep(1)
+leds.value = (1, 0, 0, 0, 0, 1)
+sleep(1)
+leds.value = (0, 0, 1, 1, 0, 0)
+sleep(1)
+leds.value = (0, 1, 0, 0, 1, 0)
+sleep(1)
+leds.blink()
 
 pause()
