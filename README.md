@@ -3,7 +3,7 @@ Engineering 4 - Project
 
 ## Table of Contents
 * [Planning](#Planning)
-* [One_Month_Check_In](#One_Month_Check_In)
+* [One Month Check In](#One Month Check In)
 ---
 
 ## Planning
@@ -47,7 +47,7 @@ Materials
 - [ ] Refine/optimize your design
 - [ ] Present finished product
 
-## One_Month_Check_In
+## One Month Check In
 #### This update is from March 1 (a month after the project has started)
 ### What have we done?
 
