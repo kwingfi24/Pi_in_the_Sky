@@ -3,6 +3,7 @@ Engineering 4 - Project
 
 ## Table of Contents
 * [Planning](#Planning)
+* [One_Month_Check_In](#One_Month_Check_In)
 ---
 
 ## Planning
@@ -45,3 +46,21 @@ Materials
 - [ ] Test your design
 - [ ] Refine/optimize your design
 - [ ] Present finished product
+
+## One_Month_Check_In
+#### This update is from March 1 (a month after the project has started)
+### What have we done?
+
+In this month we have made a design for the plane and have printed mutiple to test the flight capability of it. we have also finished most of the code other than a few things. 
+
+### What still need to be done?
+
+_____ still needs to be done
+
+### Where are we struggling?
+
+The pi camera gave us a lot of trouble.
+
+### What has been changed?
+
+We are no longer going to be dropping things from the plane. 
