@@ -3,16 +3,46 @@
 # The camera will take pictures every half second for the entirety
 # of the flight from the bottom of the plane.
 
+import time
+from picamera import PiCamera
+from gpiozero import Button
 
+button = Button(17)
+camera = PiCamera()
 
+# program start with a button press
+button.wait_for_press
 
-raspistill -t 6000 -tl 1000 -o image_num_%03d_today.jpg -l latest.jpg
-
-
-
-
-#pic every second for 6 seconds
-
+with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
+  camera.start_preview()
+  time.sleep(2) # this will give us 2 seconds to get the plane in the air before it starts taking pictures
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5) # this will give us half a second before the next picture
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5) # half a second before the program stops
+  camera.capture('img{counter:02d}.jpg') #last picture
+  
+  
 
 
 #Below is what I was working on in the past
