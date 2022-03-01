@@ -3,7 +3,7 @@ Engineering 4 - Project
 
 ## Table of Contents
 * [Planning](#Planning)
-* [One Month Check In](#One Month Check In)
+* [One_Month_Check_In](#One_Month_Check_In)
 ---
 
 ## Planning
@@ -47,11 +47,11 @@ Materials
 - [ ] Refine/optimize your design
 - [ ] Present finished product
 
-## One Month Check In
+## One_Month_Check_In
 #### This update is from March 1 (a month after the project has started)
 ### What have we done?
 
-In this month we have made a design for the plane and have printed mutiple to test the flight capability of it. we have also finished most of the code other than a few things. 
+In this month we have made a design for the plane and have printed mutiple to test the flight capability of it. There has been a total of 4 versions of the plane that change size, center of gravity points, and angles of wings. we have also finished most of the code other than a few things. The lights have been figured out, the accelerometer/OLED screen is done, and most of the iring is pretty final. So far we have been able to stay mostly on schedule, but we have run into a few bumps where we had to spend an extra bit of time on some things. We have found multiple helpful websites that have helped along the way.
 
 ### What still need to be done?
 
@@ -76,3 +76,5 @@ We are no longer going to be dropping things from the plane.
 
 Materials
 - Cardboard
+
+### Pictures
