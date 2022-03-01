@@ -31,7 +31,48 @@ Christian -
 
 
 ### Mar 1, 2022 
-Kaitlyn - 
+Kaitlyn - The code below is what I have come up with for the camera code. It is not pretty or convenient, so I'm hoping to find a different way by the end of this project. It still does what it's supposed to do though, because of this I'm still going to use it. In the nano file, I still kept older attempts and helpful code at the bottom in case I revisit. for the second half of class today, I was starting to work on putting the code together. After spending a bit of time with this, I stopped in order to take time to reorganize myself and the project. The updated plan will be in the PLANNING.md as well as touched on in the README.md.
+
+```
+import time
+from picamera import PiCamera
+from gpiozero import Button
+
+button = Button(17)
+camera = PiCamera()
+
+# program start with a button press
+button.wait_for_press
+
+with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
+  camera.start_preview()
+  time.sleep(2) # this will give us 2 seconds to get the plane in the air before it starts taking pictures
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5) # this will give us half a second before the next picture
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5) # half a second before the program stops
+  camera.capture('img{counter:02d}.jpg') #last picture
+ ```
 
 
 Christian -
