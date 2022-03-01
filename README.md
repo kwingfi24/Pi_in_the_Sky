@@ -63,4 +63,16 @@ The pi camera gave us a lot of trouble.
 
 ### What has been changed?
 
-We are no longer going to be dropping things from the plane. 
+We are no longer going to be dropping things from the plane.
+
+### Bill of Materials
+- LSM303
+- OLED Display
+- Pi Camera
+- 2 Buttons
+- 6 LEDS
+- Switch
+- Rubberband
+
+Materials
+- Cardboard
