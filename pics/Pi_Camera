@@ -15,28 +15,23 @@ raspistill -t 6000 -tl 1000 -o image_num_%03d_today.jpg -l latest.jpg
 
 
 
-
-
-
-
-
 #Below is what I was working on in the past
 # might revisit
 
-import time
-from picamera import PiCamera
-from gpiozero import Button
-from signal import pause
+#import time
+#from picamera import PiCamera
+#from gpiozero import Button
+#from signal import pause
 
-button = Button(17)
-camera = PiCamera()
+#button = Button(17)
+#camera = PiCamera()
 
 
 # program start with a button press
-button.wait_for_press
+#button.wait_for_press
 
-with picamera.PiCamera() as camera:
-    camera.start_preview()
+#with picamera.PiCamera() as camera:
+#    camera.start_preview()
 
 # continuosly running (just n case it's needed)
 # with picamera.PiCamera() as camera:
