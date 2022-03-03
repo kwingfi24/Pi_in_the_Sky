@@ -105,23 +105,27 @@ Materials
 
 #### Design/Cut
 
-Link to Onshape Document: 
+Link to Onshape Document: https://cvilleschools.onshape.com/documents/492561168bf6b91a97d77a47/w/45d7efb3da141b22b711ac96/e/4b3a4ccdc809ca3a080ae7f4
 
 ##### In Onshape
 
-###### Version 1
+###### Version 3 (Final as of right now)
 
-###### Version 2
-
-###### Version 3
-
-###### Version 4
-
-###### Version 5 (Final as of right now)
+![Screenshot 2022-03-03 9 52 52 AM](https://user-images.githubusercontent.com/60272021/156589460-5ff91dea-edbb-4563-aca9-adfe65bd77a1.png)
 
 ##### Printed
 
-###### Final Printed
+###### Version 1
+
+![Screenshot 2022-03-03 9 59 49 AM](https://user-images.githubusercontent.com/60272021/156590828-7085db7d-46a6-4710-9ebc-519f81f610b8.png)
+
+###### Version 2 - Added a second set of wings
+
+![Screenshot 2022-03-03 10 00 05 AM](https://user-images.githubusercontent.com/60272021/156590900-1bf0d4be-968a-4302-82c7-9ed34e270bba.png)
+
+###### Final Printed - Angled and curved wings
+
+
 
 #### Coding/Wiring
 
