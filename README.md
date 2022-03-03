@@ -77,7 +77,7 @@ design stuff
 
 #### Coding/Wiring
 
-The pi camera gave us a lot of trouble.
+The pi camera gave us a lot of trouble. I tried many different ways and still have not settled on a particular one. 
 
 ### What has been changed?
 
@@ -105,7 +105,29 @@ Materials
 
 #### Design/Cut
 
+Link to Onshape Document: 
+
+##### In Onshape
+
+###### Version 1
+
+###### Version 2
+
+###### Version 3
+
+###### Version 4
+
+###### Version 5 (Final as of right now)
+
+##### Printed
+
+###### Final Printed
+
 #### Coding/Wiring
+
+##### Wiring - Better pictures/diagrams will come
+
+![Screenshot 2022-03-03 9 36 39 AM](https://user-images.githubusercontent.com/60272021/156586159-3fd2d8d5-d540-4465-90f7-1111caf976b9.png)
 
 ##### Code snipets
 
