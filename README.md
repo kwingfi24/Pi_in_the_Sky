@@ -53,7 +53,7 @@ Materials
 
 #### Design/Cut
 
-In this month we have made a design for the plane and have printed mutiple to test the flight capability of it. There has been a total of 4 versions of the plane that change size, center of gravity points, and angles of wings. 
+In this month we have made a design for the plane and have printed mutiple to test the flight capability of it. There has been a total of 3 versions of the plane that change size, center of gravity points, and angles of wings. 
 
 #### Coding/Wiring
 
