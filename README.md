@@ -73,7 +73,7 @@ A few tasks still need to be done befre we can move onto the testing and refinin
 
 #### Design/Cut
 
-design stuff
+The planes keep flipping going front first. There was too much weight in the front, so we changed the design. We are trying to distribute the weight evenly, but without the pi and everything inside, it is a bit difficult to gage. We are waiting to change it anymore until we are able to test everything together for the first time.
 
 #### Coding/Wiring
 
@@ -83,7 +83,7 @@ The pi camera gave us a lot of trouble. I tried many different ways and still ha
 
 #### Design/Cut
 
-The plane is no longer closed, rather it is two sides with an open middle. It is also going to be made only out of cardboard to improve durability and weight.
+The plane is no longer closed, rather it is two sides with an open middle. It is also going to be made only out of cardboard to improve durability and weight. The wings have also changed a lot. There are now two sets of wings. In the final design (for now) both set of wings are curved and angled. 
 
 #### Coding/Wiring
 
@@ -125,7 +125,7 @@ Link to Onshape Document: https://cvilleschools.onshape.com/documents/492561168b
 
 ###### Final Printed - Angled and curved wings
 
-
+![Screenshot 2022-03-03 10 24 57 AM](https://user-images.githubusercontent.com/60272021/156595463-9ebacbb5-0c09-4814-a178-cf23a2143108.png)
 
 #### Coding/Wiring
 
