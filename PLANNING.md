@@ -54,7 +54,7 @@ CAD:
 
 image
 
-Onshape link: https://cvilleschools.onshape.com/documents/0d1477f4cea9ecd25f6723da/w/6727ffede59d5bf3646c2d1f/e/270201424a55e257cf29338d
+Onshape link: https://cvilleschools.onshape.com/documents/492561168bf6b91a97d77a47/w/45d7efb3da141b22b711ac96/e/4b3a4ccdc809ca3a080ae7f4
 
 ## Schedule
 We have planned for this project to last for 15 and a half weeks. Starting on Feb 1 (Including planning time) and ending on May 19. Presentation day is _.
