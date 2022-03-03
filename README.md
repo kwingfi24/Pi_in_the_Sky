@@ -109,7 +109,7 @@ Materials
 
 ##### Code snipets
 
-Accelerometer/OLED Screen
+###### Accelerometer/OLED Screen
 ```
 while True:    
     accel, mag = lsm303.read()
@@ -138,7 +138,7 @@ while True:
     # clear just the bottom leaving the points there to look at
     draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
 ```
-Pi Camera
+###### Pi Camera
 ```
 with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
   camera.start_preview()
@@ -169,7 +169,7 @@ with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
   time.sleep(.5) # half a second before the program stops
   camera.capture('img{counter:02d}.jpg') #last picture
 ```
-LEDS
+###### LEDS
 ```
 leds.on()
 sleep(1)
