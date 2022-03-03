@@ -78,8 +78,31 @@ with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
 Christian -
 
 ### Mar 3, 2022 
+Kaitlyn - Today I mostly worked on Github, doing the documentation stuff. I personally have been a bit stressed about the coding part recently, and wanted to take a days break while still being productive and working on the project. Along with updating the README.md tab, I also worked on drawing up a nice diagram that can hopefully be used later on too. I'm hoping to be completely done with coding and on to testing in two weeks tops (hopefully it won't take that long). If needed I can also work outside of class to finish rather than holding up the teams progression. 
+
+
+Christian -
+
+### Mar 7, 2022 
 Kaitlyn - 
 
 
 Christian -
 
+### Mar 8, 2022 
+Kaitlyn - 
+
+
+Christian -
+
+### Mar 10, 2022 
+Kaitlyn - 
+
+
+Christian -
+
+### Mar 14, 2022 
+Kaitlyn - 
+
+
+Christian -
