@@ -60,7 +60,7 @@ leds = LEDBoard(26, 19, 13, 6, 5, 22)
 
 # camera
 button = Button(17)
-camera = PiCamera()
+# camera = PiCamera()
 
 
 # accelerometer setup
@@ -126,7 +126,7 @@ while True:
     # clear just the bottom leaving the points there to look at
     draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
     
-    with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
+    with PiCamera() as camera: # this will take 13 photos within 6 seconds
       camera.start_preview()
       sleep(2) # this will give us 2 seconds to get the plane in the air before it starts taking pictures
       camera.capture('img{counter:02d}.jpg')
