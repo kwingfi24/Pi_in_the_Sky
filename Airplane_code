@@ -119,7 +119,7 @@ while True:
     draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
     draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
     # Wait half a second and repeat.
-    time.sleep(.5)
+    sleep(.5)
     # Display image.
     disp.image(image)
     disp.display()
@@ -128,30 +128,30 @@ while True:
     
     with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
       camera.start_preview()
-      time.sleep(2) # this will give us 2 seconds to get the plane in the air before it starts taking pictures
+      sleep(2) # this will give us 2 seconds to get the plane in the air before it starts taking pictures
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5) # this will give us half a second before the next picture
+      sleep(.5) # this will give us half a second before the next picture
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5)
+      sleep(.5)
       camera.capture('img{counter:02d}.jpg')
-      time.sleep(.5) # half a second before the program stops
+      sleep(.5) # half a second before the program stops
       camera.capture('img{counter:02d}.jpg') #last picture
   
