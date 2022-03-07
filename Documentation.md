@@ -84,7 +84,7 @@ Kaitlyn - Today I mostly worked on Github, doing the documentation stuff. I pers
 Christian -
 
 ### Mar 7, 2022 
-Kaitlyn - 
+Kaitlyn - I didn't get too far today. I was trying to put all the code together in one thing.
 
 
 Christian -
