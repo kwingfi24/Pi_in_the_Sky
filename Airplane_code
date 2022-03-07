@@ -127,6 +127,6 @@ while True:
     draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
     
     with PiCamera() as camera: # this will take 13 photos within 6 seconds
-      camera.start_preview()
-      for filename in camera.capture('img{counter:03d}.jpg'):
-    sleep(.5)
+        camera.start_preview()
+        for filename in camera.capture('img{counter:03d}.jpg'):
+        sleep(.5)
