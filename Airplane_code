@@ -129,4 +129,4 @@ while True:
     with PiCamera() as camera: # this will take 13 photos within 6 seconds
         camera.start_preview()
         for filename in camera.capture('img{counter:03d}.jpg'):
-        sleep(.5)
+            sleep(.5)
