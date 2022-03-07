@@ -30,7 +30,7 @@ def quotient(accel_z, scale1):
 def direction(x):
     return (quotient(accel_x, scale) * 4)
 def direction(height):
-    return (quotient(accel_z, scale1) * 1.5)
+    return (quotient(accel_z, scale1) * 2.5)
     
 # Raspberry Pi pin configuration:
 RST = 24
