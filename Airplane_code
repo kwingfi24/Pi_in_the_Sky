@@ -131,6 +131,6 @@ while True:
         
     with PiCamera() as camera: # 
         camera.start_preview()
-        camera.capture('img{counter:03d}.jpg') #adding numbers to pictures
+        camera.capture('img/%s.jpg' % frame') #adding numbers to pictures
         frame += 1
         sleep(.5)
