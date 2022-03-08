@@ -90,7 +90,7 @@ Kaitlyn - I didn't get too far today. I was trying to put all the code together 
 Christian -
 
 ### Mar 8, 2022 
-Kaitlyn - 
+Kaitlyn - *NOTE: I switch the working shutdown button for the camera button temporarly due to some difficulties and limited space. You will have to switch it back eventually. Remember the pin for the shutdown button is 21!*
 
 
 Christian -
