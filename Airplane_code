@@ -130,6 +130,6 @@ while True:
     
     with PiCamera() as camera: # 
         camera.start_preview()
-        camera.capture('img/count%03d.jpg' % frame.jpg')
+        camera.capture('img/count%03d.jpg')
         count += 1
         sleep(.5)
