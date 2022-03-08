@@ -26,7 +26,7 @@ from picamera import PiCamera
 from gpiozero import Button
 
 
-# Defining things (accelerometer and OLED)
+# Defining things (accelerometer and OLED + one for the camera)
 # Create a LSM303 instance.
 lsm303 = Adafruit_LSM303.LSM303()
 
@@ -44,6 +44,9 @@ def direction(x):
     return (quotient(accel_x, scale) * 4)
 def direction(height):
     return (quotient(accel_z, scale1) * 1.5)
+
+# Camera
+frame = 1
 
 
 # Pins for each thing
@@ -125,11 +128,9 @@ while True:
     disp.display()
     # clear just the bottom leaving the points there to look at
     draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
-    
-   # count = 1
-    
+        
     with PiCamera() as camera: # 
         camera.start_preview()
-        camera.capture('img.jpg')
-    #    count += 1
+        camera.capture('pic/frame%03d.jpg' % frame) #adding numbers to pictures
+        frame += 1
         sleep(.5)
