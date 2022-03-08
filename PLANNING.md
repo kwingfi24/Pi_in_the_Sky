@@ -62,15 +62,15 @@ We have planned for this project to last for 15 and a half weeks. Starting on Fe
 - [x] Accelerometer and OLED Display - Tues, Feb 15
 - [x] Initial Design (CAD) including any measurements - Thurs, Feb 17
 - [x] Pi Camera with button - Mon, Feb 28
-- [x] Lights for apex - mon, Feb 28
-- [ ] Testing flying capability of original design - Mon, Feb 28
-- [ ] Putting pieces of the code together - Tues, Mar 1  
-- [ ] Working with no screen - Thurs, Mar 3
-- [ ] Battery powered - Thurs, Mar 3
-- [ ] Build prototype #1 (possibly testing without all pieces)- Thurs, Mar 3
-- [ ] Testing that prototype - Tues, Mar 8
-- [ ] Tweaking design and/or code - Mon, Mar 14
-- [ ] Build prototype #2 / Update prototype #1 - Tues, Mar 15
+- [x] Lights for apex - Mon, Feb 28
+- [X] Testing flying capability of original design - Mon, Feb 28
+- [X] Putting pieces of the code together - Tues, Mar 1  
+- [ ] Working with no screen - Thurs, Mar 10
+- [ ] Battery powered - Thurs, Mar 10
+- [ ] Build prototype #1 (possibly testing without all pieces)- Thurs, Mar 13
+- [ ] Testing that prototype - Tues, Mar 14
+- [ ] Tweaking design and/or code - Mon, Mar 15
+- [ ] Build prototype #2 / Update prototype #1 - Tues, Mar 16
 - [ ] Testing that prototype - Thurs, Mar 17
 - [ ] Tweaking design and/or code - Mon, Mar 21
 - [ ] Finalize CAD Design - Mon, Mar 28
