@@ -126,10 +126,10 @@ while True:
     # clear just the bottom leaving the points there to look at
     draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
     
-    count = 1
+   # count = 1
     
     with PiCamera() as camera: # 
         camera.start_preview()
-        camera.capture('img/count%03d.jpg')
-        count += 1
+        camera.capture('img.jpg')
+    #    count += 1
         sleep(.5)
