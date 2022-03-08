@@ -84,7 +84,7 @@ Kaitlyn - I didn't get too far today. I was trying to put all the code together 
 Christian -
 
 ### Mar 8, 2022 
-Kaitlyn - **NOTE: I switch the working shutdown button for the camera button temporarly due to some difficulties and limited space. You will have to switch it back eventually. Remember the pin for the shutdown button is 21!** After changing he buttons, I got everything to work except for the counter for the images (so it doesn't keep modifying/deleting previous pictures). I'm still unsure why this is happening, but everything else, excluding the lights for now, is working together. I'm hoping by the end of next class, I will have this figured out, so I can move onto the lights and even further with adding a battery and haing it run without a computer. 
+Kaitlyn - **NOTE: I switch the working shutdown button for the camera button temporarly due to some difficulties and limited space. You will have to switch it back eventually. Remember the pin for the shutdown button is 21!** After changing the buttons, I got everything to work. Everything, excluding the lights and button for now, are working together. I'm hoping by the end of next class, I will have the button figured out(starting and stopping the things from running), so I can then also move onto soldering a custom circuitboard. We are hoping to have everything soldered and on the plane for testing by next Tuesday or Thursday. We will then move n to the test and refining process. 
 
 Christian -
 
