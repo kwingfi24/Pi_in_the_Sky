@@ -28,17 +28,17 @@ lsm303 = Adafruit_LSM303.LSM303()
 scale = int (9.81)
 scale1 = int (100)
 
-def quotient(accel_x, scale): 
-    return (accel_x / scale)
-def quotient(accel_y, scale): 
-    return (accel_y / scale)
-def quotient(accel_z, scale1): 
-    return (accel_z / scale1)
+# def quotient(accel_x, scale): 
+#     return (accel_x / scale)
+# def quotient(accel_y, scale): 
+#     return (accel_y / scale)
+# def quotient(accel_z, scale1): 
+#     return (accel_z / scale1)
     
-def direction(x):
-    return (quotient(accel_x, scale) * 4)
-def direction(height):
-    return (quotient(accel_z, scale1) * 1.5)
+# def direction(x):
+#     return (quotient(accel_x, scale) * 4)
+# def direction(height):
+#     return (quotient(accel_z, scale1) * 1.5)
 
 # Camera
 frame = 1
@@ -95,6 +95,18 @@ x = padding
 font = ImageFont.load_default()
 
 def start():
+    def quotient(accel_x, scale): 
+        return (accel_x / scale)
+    def quotient(accel_y, scale): 
+        return (accel_y / scale)
+    def quotient(accel_z, scale1): 
+        return (accel_z / scale1)
+    
+    def direction(x):
+        return (quotient(accel_x, scale) * 4)
+    def direction(height):
+        return (quotient(accel_z, scale1) * 1.5)
+    
     accel, mag = lsm303.read()
     # Grab the X, Y, Z components from the reading and print them out.
     accel_x, accel_y, accel_z = accel
