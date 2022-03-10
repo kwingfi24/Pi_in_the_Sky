@@ -75,8 +75,7 @@ def start():
         frame += 1
         sleep(.5)
         
-def stop():
-    break
+
 
 # Camera
 frame = 1
@@ -155,6 +154,6 @@ while True:
             time.sleep(0.5)
             # long button press
             if counter > 4:
-                stop()
+                 break
         #if short button press, restart!
         start()
