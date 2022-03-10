@@ -41,7 +41,7 @@ scale1 = int (100)
 #     return (quotient(accel_z, scale1) * 1.5)
 
 # Camera
-frame = 1
+# frame = 1
 
 
 # Pins for each thing
@@ -107,6 +107,8 @@ def start():
     def direction(height):
         return (quotient(accel_z, scale1) * 1.5)
     
+    frame = 1
+    
     accel, mag = lsm303.read()
     # Grab the X, Y, Z components from the reading and print them out.
     accel_x, accel_y, accel_z = accel
@@ -145,11 +147,10 @@ while True:
     if channel is None:
         print('Not starting')
     else:
-        print('button pressed, starting')
         counter = 0
         while button == False:
             # For troubleshooting, uncomment this line to view the counter. If it reaches a value above 4, we will restart.
-            #print(counter)
+            print('button pressed, starting') #print(counter)
             counter += 1
             sleep(0.5)
             # long button press
