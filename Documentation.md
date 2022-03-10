@@ -89,7 +89,7 @@ Kaitlyn - **NOTE: I switch the working shutdown button for the camera button tem
 Christian -
 
 ### Mar 10, 2022 
-Kaitlyn - 
+Kaitlyn - I have recorded the pins for everything to be used at a lter time while soldering. I tried a way to get the things starting and stopping on the same button, but I have not yet succeded. I'm taking the pi home to work on over the weekend to get this button figured out. On Monday, I hope to be soldering. this will allow us to test all of Tuesday, and know what is working and hat isn't.
 
 Christian -
 
