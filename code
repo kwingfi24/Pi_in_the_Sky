@@ -136,7 +136,7 @@ while True:
     sleep(0.5)
     # wait for a button press with switch debounce on the falling edge so that this script
     # is not taking up too many resources in order to shutdown/reboot the Pi safely
-    channel = GPIO.wait_for_edge(button, GPIO.FALLING, bouncetime=200)
+    channel = button.wait_for_press
     if channel is None:
         print('Not starting')
     else:
