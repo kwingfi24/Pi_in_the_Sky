@@ -142,7 +142,7 @@ while True:
     else:
         print('button pressed, starting')
         counter = 0
-        while GPIO.input(button) == False:
+        while button == False:
             # For troubleshooting, uncomment this line to view the counter. If it reaches a value above 4, we will restart.
             #print(counter)
             counter += 1
