@@ -40,38 +40,6 @@ def direction(x):
 def direction(height):
     return (quotient(accel_z, scale1) * 1.5)
 
-def start():
-    accel, mag = lsm303.read()
-    # Grab the X, Y, Z components from the reading and print them out.
-    accel_x, accel_y, accel_z = accel
-    mag_x, mag_y, mag_z = mag
-
-    # change in x and z values
-    a = direction(x)
-    b = direction(height)
-    
-    # "Graphing" the x values by drawing circles/plotting point every second
-    draw.ellipse((x+a, top+b, x+shape_width+a, top+shape_height+b), outline=225, fill=225) # both values
-    
-    
-    # Write readings for x and y
-    draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
-    draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
-    # Wait half a second and repeat.
-    # Display image.
-    disp.image(image)
-    disp.display()
-    # clear just the bottom leaving the points there to look at
-    draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
-        
-    with PiCamera() as camera: # 
-        camera.start_preview()
-        camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/V1-Mar13%s.jpg' % frame) # adding numbers to pictures
-        frame += 1
-        sleep(.5)
-        
-
-
 # Camera
 frame = 1
 
@@ -126,11 +94,36 @@ x = padding
 # Load default font.
 font = ImageFont.load_default()
 
+def start():
+    accel, mag = lsm303.read()
+    # Grab the X, Y, Z components from the reading and print them out.
+    accel_x, accel_y, accel_z = accel
+    mag_x, mag_y, mag_z = mag
 
-
-# program start with a button press
-button.wait_for_press
-sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
+    # change in x and z values
+    a = direction(x)
+    b = direction(height)
+    
+    # "Graphing" the x values by drawing circles/plotting point every second
+    draw.ellipse((x+a, top+b, x+shape_width+a, top+shape_height+b), outline=225, fill=225) # both values
+    
+    
+    # Write readings for x and y
+    draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
+    draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
+    # Wait half a second and repeat.
+    # Display image.
+    disp.image(image)
+    disp.display()
+    # clear just the bottom leaving the points there to look at
+    draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
+        
+    with PiCamera() as camera: # 
+        camera.start_preview()
+        camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/V1-Mar13%s.jpg' % frame) # adding numbers to pictures
+        frame += 1
+        sleep(.5)
+        
 
 while True: 
     sleep(0.5)
