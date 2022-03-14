@@ -102,10 +102,10 @@ font = ImageFont.load_default()
 
 
 # program start with a button press
-button.wait_for_press
-sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
+#button.wait_for_press
+#sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
 
-while True: 
+while button == True: 
     accel, mag = lsm303.read()
     # Grab the X, Y, Z components from the reading and print them out.
     accel_x, accel_y, accel_z = accel
