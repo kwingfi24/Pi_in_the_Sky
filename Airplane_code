@@ -105,7 +105,7 @@ font = ImageFont.load_default()
 #button.wait_for_press
 #sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
 
-button.wait_for_press: 
+button.wait_for_press
     while True:
         accel, mag = lsm303.read()
         # Grab the X, Y, Z components from the reading and print them out.
