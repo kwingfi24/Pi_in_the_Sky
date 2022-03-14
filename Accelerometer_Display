@@ -89,12 +89,12 @@ while True:
     
     # Write readings for x and y
     draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
-  #  draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
+    draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
     # Wait half a second and repeat.
-   # time.sleep(.5)
+    time.sleep(.5)
     # Display image.
-    #disp.image(image)
-    #disp.display()
+    disp.image(image)
+    disp.display()
     # clear just the bottom leaving the points there to look at
-    #draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
+    draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
 
