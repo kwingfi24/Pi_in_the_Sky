@@ -167,3 +167,9 @@ leds.blink()
 ```
 
 ## Test_1
+### How did it go?
+### What worked and what didn't?
+### What needs to be changed/improved? 
+### Pictures 
+##### Of plane 
+##### From flight
