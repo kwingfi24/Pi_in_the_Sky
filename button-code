@@ -4,8 +4,8 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-leftSWITCH = 18
-rightSWITCH = 20
+leftSWITCH = 20
+rightSWITCH = 18
 
 GPIO.setup(leftSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(rightSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -16,13 +16,13 @@ try:
     while True:
         input_state1 = GPIO.input(leftSWITCH)
         input_state2 = GPIO.input(rightSWITCH)
-        if input_state1 == False:
+        if input_state2 == False:
             print('left button was pressed!')
             while True:
                 print('.', end='', flush=True)
                 time.sleep(1)
 
-                if input_state2 == False:
+                if input_state1 == False:
                     print('right button was pressed!')
                     break
 
