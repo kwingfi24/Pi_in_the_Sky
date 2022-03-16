@@ -10,8 +10,8 @@
 from time import sleep
 # import RPi.GPIO as GPIO
 
-#GPIO.setmode(GPIO.BCM)
-#GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
 
 # for acceerometer and OLED screen
 import Adafruit_GPIO.SPI as SPI
@@ -56,10 +56,10 @@ frame = 1
 # Pins for each thing
 
 leftbutton = 20
-rightbutton = 17
+rightbutton = 18
 
-#GPIO.setup(leftbutton, GPIO.IN)
-#GPIO.setup(rightbutton, GPIO.IN)
+GPIO.setup(leftSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(rightSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 # Accelerometer and OLED screen
 RST = 24
@@ -120,37 +120,38 @@ try:
         if input_state == False:
             print('left button was pressed!')
             while True:
-              accel, mag = lsm303.read()
-              # Grab the X, Y, Z components from the reading and print them out.
-              accel_x, accel_y, accel_z = accel
-              mag_x, mag_y, mag_z = mag
+               input_state1 = GPIO.input(rightSWITCH)
+               accel, mag = lsm303.read()
+               # Grab the X, Y, Z components from the reading and print them out.
+               accel_x, accel_y, accel_z = accel
+               mag_x, mag_y, mag_z = mag
 
-              # change in x and z values
-              a = direction(x)
-              b = direction(height)
+               # change in x and z values
+               a = direction(x)
+               b = direction(height)
     
-              # "Graphing" the x values by drawing circles/plotting point every second
-              draw.ellipse((x+a, top+b, x+shape_width+a, top+shape_height+b), outline=225, fill=225) # both values
+               # "Graphing" the x values by drawing circles/plotting point every second
+               draw.ellipse((x+a, top+b, x+shape_width+a, top+shape_height+b), outline=225, fill=225) # both values
     
     
-              # Write readings for x and y
-              draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
-              draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
-              # Wait half a second and repeat.
-              # Display image.
-              disp.image(image)
-              disp.display()
-              # clear just the bottom leaving the points there to look at
-              draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
+               # Write readings for x and y
+               draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
+               draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
+               # Wait half a second and repeat.
+               # Display image.
+               disp.image(image)
+               disp.display()
+               # clear just the bottom leaving the points there to look at
+               draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
         
-              with PiCamera() as camera: # 
-                  camera.start_preview()
-                  camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/V1-Mar13%s.jpg' % frame) # adding numbers to pictures
-                  frame += 1
-                  sleep(.5)
-              if input_state1 == False:
-                    print('right button was pressed!')
-                    break
+               with PiCamera() as camera: # 
+                   camera.start_preview()
+                   camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/V1-Mar13%s.jpg' % frame) # adding numbers to pictures
+                   frame += 1
+                   sleep(.5)
+               if input_state1 == False:
+                     print('right button was pressed!')
+                     break
 
 finally:
     GPIO.cleanup()          
