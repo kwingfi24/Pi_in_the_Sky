@@ -55,11 +55,11 @@ frame = 1
 
 # Pins for each thing
 
-leftSWITCH = 20
-rightSWITCH = 17
+leftbutton = 20
+rightbutton = 17
 
-GPIO.setup(leftSWITCH, GPIO.IN)
-GPIO.setup(rightSWITCH, GPIO.IN)
+GPIO.setup(leftbutton, GPIO.IN)
+GPIO.setup(rightbutton, GPIO.IN)
 
 # Accelerometer and OLED screen
 RST = 24
@@ -116,7 +116,7 @@ try:
     print('press the left button to start. Press the right button to stop.')
 
     while True:
-        input_state = GPIO.input(leftSWITCH)
+        input_state = GPIO.input(leftbutton)
         if input_state == False:
             print('left button was pressed!')
             while True:
