@@ -13,16 +13,15 @@ try:
     print('press the left button to start. Press the right button to stop.')
 
     while True:
-        input_state = GPIO.input(leftSWITCH)
-        if input_state == False:
+        input_state1 = GPIO.input(leftSWITCH)
+        input_state2 = GPIO.input(rightSWITCH)
+        if input_state1 == False:
             print('left button was pressed!')
             while True:
-                input_state1 = GPIO.input(rightSWITCH)
-
                 print('.', end='', flush=True)
                 time.sleep(1)
 
-                if input_state1 == False:
+                if input_state2 == False:
                     print('right button was pressed!')
                     break
 
