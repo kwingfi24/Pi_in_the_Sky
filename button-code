@@ -4,8 +4,8 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-leftSWITCH = 18
-rightSWITCH = 20
+leftSWITCH = 20
+rightSWITCH = 18
 
 GPIO.setup(leftSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(rightSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
