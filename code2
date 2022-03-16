@@ -8,10 +8,10 @@
 # All the imports
 
 from time import sleep
-import RPi.GPIO as GPIO
+# import RPi.GPIO as GPIO
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
+#GPIO.setmode(GPIO.BCM)
+#GPIO.setwarnings(False)
 
 # for acceerometer and OLED screen
 import Adafruit_GPIO.SPI as SPI
@@ -58,8 +58,8 @@ frame = 1
 leftbutton = 20
 rightbutton = 17
 
-GPIO.setup(leftbutton, GPIO.IN)
-GPIO.setup(rightbutton, GPIO.IN)
+#GPIO.setup(leftbutton, GPIO.IN)
+#GPIO.setup(rightbutton, GPIO.IN)
 
 # Accelerometer and OLED screen
 RST = 24
