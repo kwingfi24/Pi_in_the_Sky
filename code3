@@ -1,0 +1,30 @@
+import RPi.GPIO as GPIO
+import time 
+
+GPIO.setmode(GPIO.BOARD)
+
+leftSWITCH = 16
+rightSWITCH = 18
+
+GPIO.setup(leftSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(rightSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+try:
+    print('press the left button to start. Press the right button to stop.')
+
+    while True:
+        input_state = GPIO.input(leftSWITCH)
+        if input_state == False:
+            print('left button was pressed!')
+            while True:
+                input_state1 = GPIO.input(rightSWITCH)
+
+                print('.', end='', flush=True)
+                time.sleep(1)
+
+                if input_state1 == False:
+                    print('right button was pressed!')
+                    break
+
+finally:
+    GPIO.cleanup()
