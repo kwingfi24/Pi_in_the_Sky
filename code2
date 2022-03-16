@@ -1,0 +1,158 @@
+# Started Mar 1
+# Finished by Mar 7 (first test)
+# This will be the code that will be running.
+# It combines the parts al together, including 
+# the lights, accelerometer, OLED screen, 
+# and the camera. 
+
+# All the imports
+
+from time import sleep
+import RPi.GPIO as GPIO
+
+GPIO.setmode(GPIO.BOARD)
+
+# for acceerometer and OLED screen
+import Adafruit_GPIO.SPI as SPI
+import Adafruit_SSD1306
+import Adafruit_LSM303
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+
+# for LEDS
+from gpiozero import LEDBoard
+from signal import pause
+
+# for camera
+from picamera import PiCamera
+from gpiozero import Button
+
+GPIO.setmode(GPIO.BOARD)
+
+
+
+# Defining things (accelerometer and OLED + one for the camera)
+# Create a LSM303 instance.
+lsm303 = Adafruit_LSM303.LSM303()
+
+scale = int (9.81)
+scale1 = int (100)
+
+def quotient(accel_x, scale): 
+    return (accel_x / scale)
+def quotient(accel_y, scale): 
+    return (accel_y / scale)
+def quotient(accel_z, scale1): 
+    return (accel_z / scale1)
+    
+def direction(x):
+    return (quotient(accel_x, scale) * 4)
+def direction(height):
+    return (quotient(accel_z, scale1) * 1.5)
+
+# Camera
+frame = 1
+
+
+# Pins for each thing
+
+leftSWITCH = 20
+rightSWITCH = 17
+
+GPIO.setup(leftSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(rightSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+# Accelerometer and OLED screen
+RST = 24
+# Note the following are only used with SPI:
+DC = 23
+SPI_PORT = 0
+SPI_DEVICE = 0
+
+# LEDs
+leds = LEDBoard(26, 19, 13, 6, 5, 22)
+
+# camera
+#button = Button(17)
+# camera = PiCamera()
+
+
+# accelerometer setup
+disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
+# Initialize library.
+disp.begin()
+
+# Clear display.
+disp.clear()
+disp.display()
+
+# Create blank image for drawing.
+# Make sure to create image with mode '1' for 1-bit color.
+width = disp.width
+height = disp.height
+image = Image.new('1', (width, height))
+
+# Get drawing object to draw on image.
+draw = ImageDraw.Draw(image)
+
+# Draw a black filled box to clear the image.
+draw.rectangle((0,0,width,height), outline=0, fill=0)
+
+# First define some constants to allow easy resizing of shapes.
+padding = 5
+shape_width = 2
+shape_height = 2
+top = padding
+bottom = height-padding
+# Move left to right keeping track of the current x position for drawing shapes.
+x = padding
+
+# Load default font.
+font = ImageFont.load_default()
+
+sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
+
+
+try:
+    print('press the left button to start. Press the right button to stop.')
+
+    while True:
+        GPIO.wait_for_edge(leftSWITCH, GPIO.FALLING, bouncetime=100)
+        if input_state == False:
+            print('left button was pressed!')
+            while True:
+              accel, mag = lsm303.read()
+              # Grab the X, Y, Z components from the reading and print them out.
+              accel_x, accel_y, accel_z = accel
+              mag_x, mag_y, mag_z = mag
+
+              # change in x and z values
+              a = direction(x)
+              b = direction(height)
+    
+              # "Graphing" the x values by drawing circles/plotting point every second
+              draw.ellipse((x+a, top+b, x+shape_width+a, top+shape_height+b), outline=225, fill=225) # both values
+    
+    
+              # Write readings for x and y
+              draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
+              draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
+              # Wait half a second and repeat.
+              # Display image.
+              disp.image(image)
+              disp.display()
+              # clear just the bottom leaving the points there to look at
+              draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
+        
+              with PiCamera() as camera: # 
+                  camera.start_preview()
+                  camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/V1-Mar13%s.jpg' % frame) # adding numbers to pictures
+                  frame += 1
+                  sleep(.5)
+              if input_state1 == False:
+                    print('right button was pressed!')
+                    break
+
+finally:
+    GPIO.cleanup()          

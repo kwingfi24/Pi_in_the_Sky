@@ -4,6 +4,7 @@ Engineering 4 - Project
 ## Table of Contents
 * [Planning](#Planning)
 * [One_Month_Check_In](#One_Month_Check_In)
+* [Test_1](#Test_1)
 ---
 
 ## Planning
@@ -164,3 +165,11 @@ leds.value = (0, 1, 0, 0, 1, 0)
 sleep(1)
 leds.blink()
 ```
+
+## Test_1
+### How did it go?
+### What worked and what didn't?
+### What needs to be changed/improved? 
+### Pictures 
+##### Of plane 
+##### From flight
