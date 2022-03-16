@@ -97,3 +97,8 @@ Christian -
 Kaitlyn - We have no singleton this week and Friday off. After a busy weekend, I was unabe to finish the button. I'm going to work on this all class, hopefully completing it. If not, I will take it home and finish it by Thursday. This will allow us Wednesday and Monday to solder. Leaving the rest of the time before spring break to testing.
 
 Christian -
+
+### Mar 16, 2022
+Kaitlyn - I have gotten eerything ready for soldering. The button code that I was working on had one single coding error that was fixed pretty easily. I'm now working on the wiring diagram, then moving on to soldering it all together. This will probably take the singleton and block day next week. This would mean that we would be testing next Thursday. By the start of spring break, we will have tested the plane and know what works and what didn't.
+
+Christian - 
