@@ -1,5 +1,5 @@
 # Started Mar 1
-# Finished by Mar 7 (first test)
+# Finished on ___ (first test)
 # This will be the code that will be running.
 # It combines the parts al together, including 
 # the lights, accelerometer, OLED screen, 
@@ -11,6 +11,7 @@ from time import sleep
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
 
 # for acceerometer and OLED screen
 import Adafruit_GPIO.SPI as SPI
