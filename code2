@@ -28,9 +28,6 @@ from signal import pause
 from picamera import PiCamera
 from gpiozero import Button
 
-GPIO.setmode(GPIO.BOARD)
-
-
 
 # Defining things (accelerometer and OLED + one for the camera)
 # Create a LSM303 instance.
@@ -60,8 +57,8 @@ frame = 1
 leftSWITCH = 20
 rightSWITCH = 17
 
-GPIO.setup(leftSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(rightSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(leftSWITCH, GPIO.IN)
+GPIO.setup(rightSWITCH, GPIO.IN)
 
 # Accelerometer and OLED screen
 RST = 24
@@ -118,7 +115,7 @@ try:
     print('press the left button to start. Press the right button to stop.')
 
     while True:
-        GPIO.wait_for_edge(leftSWITCH, GPIO.FALLING, bouncetime=100)
+        input_state = GPIO.input(leftSWITCH)
         if input_state == False:
             print('left button was pressed!')
             while True:
