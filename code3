@@ -1,10 +1,10 @@
 import RPi.GPIO as GPIO
 import time 
 
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 
-leftSWITCH = 16
-rightSWITCH = 18
+leftSWITCH = 20
+rightSWITCH = 17
 
 GPIO.setup(leftSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(rightSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
