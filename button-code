@@ -15,15 +15,15 @@ try:
 
     while True:
         input_state1 = GPIO.input(leftSWITCH)
-        input_state2 = GPIO.input(rightSWITCH)
         if input_state1 == False:
             print('left button was pressed!')
             while True:
+                input_state2 = GPIO.input(rightSWITCH)
+                print('.', end='', flush=True)
+                time.sleep(1)
                 if input_state2 == False:
                     print('right button was pressed!')
                     break
-                print('.', end='', flush=True)
-                time.sleep(1)
 
                 
 
