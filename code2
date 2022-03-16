@@ -58,8 +58,8 @@ frame = 1
 leftbutton = 20
 rightbutton = 18
 
-GPIO.setup(leftSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(rightSWITCH, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(leftbutton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(rightbutton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 # Accelerometer and OLED screen
 RST = 24
@@ -115,7 +115,7 @@ try:
         if input_state == False:
             print('left button was pressed!')
             while True:
-               input_state1 = GPIO.input(rightSWITCH)
+               input_state1 = GPIO.input(rightbutton)
                accel, mag = lsm303.read()
                # Grab the X, Y, Z components from the reading and print them out.
                accel_x, accel_y, accel_z = accel
