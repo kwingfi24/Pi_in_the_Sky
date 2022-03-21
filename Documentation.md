@@ -102,3 +102,8 @@ Christian -
 Kaitlyn - I have gotten everything ready for soldering. The button code that I was working on had one single coding error that was fixed pretty easily. I'm now working on the wiring diagram, then moving on to soldering it all together. This will probably take the singleton and block day next week. This would mean that we would be testing next Thursday. By the start of spring break, we will have tested the plane and know what works and what didn't.
 
 Christian - 
+
+### Mar 21, 2022
+Kaitlyn - Being a short day and being unable to have a quick recap on soldering, I made a diagram and updated Github on the documantation end. I also realized that during this first test, I forgot that I have not yet programmed the lights to go off at the appex, which is a big part of the project. For now we are going to test without them, seeing how things work. This will  give me time to do the coding while the design of the plane is being modified to fly better. 
+
+Christian - 
