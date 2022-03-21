@@ -99,6 +99,6 @@ Kaitlyn - We have no singleton this week and Friday off. After a busy weekend, I
 Christian -
 
 ### Mar 16, 2022
-Kaitlyn - I have gotten eerything ready for soldering. The button code that I was working on had one single coding error that was fixed pretty easily. I'm now working on the wiring diagram, then moving on to soldering it all together. This will probably take the singleton and block day next week. This would mean that we would be testing next Thursday. By the start of spring break, we will have tested the plane and know what works and what didn't.
+Kaitlyn - I have gotten everything ready for soldering. The button code that I was working on had one single coding error that was fixed pretty easily. I'm now working on the wiring diagram, then moving on to soldering it all together. This will probably take the singleton and block day next week. This would mean that we would be testing next Thursday. By the start of spring break, we will have tested the plane and know what works and what didn't.
 
 Christian - 
