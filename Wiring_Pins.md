@@ -15,5 +15,12 @@ Pin 20
 ### Stop Button
 Pin 18
 ## Accelerometer
-
+GND -> GND
+Vin -> 3.3 v
+SDA -> SDA
+SCL -> SCL
 ## OLED Screen
+GND -> GND
+Vin -> 3.3 v
+CLK -> SCL
+Data -> SDA
