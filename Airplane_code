@@ -109,11 +109,14 @@ sleep(2) # this will give us 2 seconds to get the plane in the air before the ac
 
 try:
     print('press the left button to start. Press the right button to stop.')
-
+    draw.text((x, top+10), f'Press the left (yellow) button to start. Press the right (grey) button to stop.}',  font=font, fill=255)
     while True:
         input_state = GPIO.input(leftbutton)
         if input_state == False:
             print('left button was pressed!')
+            # Clear display.
+            disp.clear()
+            disp.display()
             while True:
                input_state1 = GPIO.input(rightbutton)
                accel, mag = lsm303.read()
@@ -141,7 +144,7 @@ try:
         
                with PiCamera() as camera: # 
                    camera.start_preview()
-                   camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/V1-Mar13%s.jpg' % frame) # adding numbers to pictures
+                   camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/Mar22-%s.jpg' % frame) # adding numbers to pictures
                    frame += 1
                    sleep(.5)
                if input_state1 == False:
