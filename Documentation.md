@@ -107,3 +107,23 @@ Christian -
 Kaitlyn - Being a short day and being unable to have a quick recap on soldering, I made a diagram and updated Github on the documantation end. I also realized that during this first test, I forgot that I have not yet programmed the lights to go off at the appex, which is a big part of the project. For now we are going to test without them, seeing how things work. This will  give me time to do the coding while the design of the plane is being modified to fly better. 
 
 Christian - 
+
+### Mar 22, 2022
+Kaitlyn - Due to again being unable to solder today, I got started on the lights going off at the apex. I'm struggling a bit, but I hope to possibly get this done before we test the first time.
+
+Christian - 
+
+### Mar 24, 2022
+Kaitlyn - 
+
+Christian - 
+
+### Mar 28, 2022
+Kaitlyn - 
+
+Christian - 
+
+### Mar 30, 2022
+Kaitlyn - 
+
+Christian - 
