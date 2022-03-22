@@ -138,16 +138,6 @@ with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
   camera.capture('img{counter:02d}.jpg')
   time.sleep(.5)
   camera.capture('img{counter:02d}.jpg')
-  time.sleep(.5)
-  camera.capture('img{counter:02d}.jpg')
-  time.sleep(.5)
-  camera.capture('img{counter:02d}.jpg')
-  time.sleep(.5)
-  camera.capture('img{counter:02d}.jpg')
-  time.sleep(.5)
-  camera.capture('img{counter:02d}.jpg')
-  time.sleep(.5)
-  camera.capture('img{counter:02d}.jpg')
   time.sleep(.5) # half a second before the program stops
   camera.capture('img{counter:02d}.jpg') #last picture
 ```
@@ -172,107 +162,6 @@ leds.blink()
 ##### Code: 
 Comments are in the code
 ```
-# All the imports
-
-from time import sleep
-import RPi.GPIO as GPIO
-
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-
-# for acceerometer and OLED screen
-import Adafruit_GPIO.SPI as SPI
-import Adafruit_SSD1306
-import Adafruit_LSM303
-from PIL import Image
-from PIL import ImageDraw
-from PIL import ImageFont
-
-# for LEDS
-from gpiozero import LEDBoard
-from signal import pause
-
-# for camera
-from picamera import PiCamera
-from gpiozero import Button
-
-
-# Defining things (accelerometer and OLED + one for the camera)
-# Create a LSM303 instance.
-lsm303 = Adafruit_LSM303.LSM303()
-
-scale = int (9.81)
-scale1 = int (100)
-
-def quotient(accel_x, scale): 
-    return (accel_x / scale)
-def quotient(accel_y, scale): 
-    return (accel_y / scale)
-def quotient(accel_z, scale1): 
-    return (accel_z / scale1)
-    
-def direction(x):
-    return (quotient(accel_x, scale) * 4)
-def direction(height):
-    return (quotient(accel_z, scale1) * 1.5)
-
-# Camera
-frame = 1
-
-
-# Pins for each thing
-
-leftbutton = 20
-rightbutton = 18
-
-GPIO.setup(leftbutton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(rightbutton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-
-# Accelerometer and OLED screen
-RST = 24
-# Note the following are only used with SPI:
-DC = 23
-SPI_PORT = 0
-SPI_DEVICE = 0
-
-# LEDs
-leds = LEDBoard(26, 19, 13, 6, 5, 22)
-
-# accelerometer setup
-disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
-# Initialize library.
-disp.begin()
-
-# Clear display.
-disp.clear()
-disp.display()
-
-# Create blank image for drawing.
-# Make sure to create image with mode '1' for 1-bit color.
-width = disp.width
-height = disp.height
-image = Image.new('1', (width, height))
-
-# Get drawing object to draw on image.
-draw = ImageDraw.Draw(image)
-
-# Draw a black filled box to clear the image.
-draw.rectangle((0,0,width,height), outline=0, fill=0)
-
-# First define some constants to allow easy resizing of shapes.
-padding = 5
-shape_width = 2
-shape_height = 2
-top = padding
-bottom = height-padding
-# Move left to right keeping track of the current x position for drawing shapes.
-x = padding
-
-# Load default font.
-font = ImageFont.load_default()
-
-    
-
 try:
     print('Press the left (yellow) button to start. Press the right (grey) button to stop.')
     while True:
