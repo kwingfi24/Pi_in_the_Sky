@@ -109,7 +109,7 @@ sleep(2) # this will give us 2 seconds to get the plane in the air before the ac
 
 try:
     print('press the left button to start. Press the right button to stop.')
-    draw.text((x, top+10), f'Press the left (yellow) button to start. Press the right (grey) button to stop.}',  font=font, fill=255)
+    draw.text((x, top+10), f'Press the left (yellow) button to start. Press the right (grey) button to stop.',  font=font, fill=255)
     while True:
         input_state = GPIO.input(leftbutton)
         if input_state == False:
