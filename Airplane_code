@@ -104,22 +104,17 @@ x = padding
 # Load default font.
 font = ImageFont.load_default()
 
-sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
     
-draw.text((x, top), 'Acceleration', font=font, fill=255)
 
 try:
     print('Press the left (yellow) button to start. Press the right (grey) button to stop.')
-    # draw.text((x, bottom-10), 'Press the left (yellow) button to start. Press the right (grey) button to stop.',  font=font, fill=255)
     while True:
-        input_state = GPIO.input(leftbutton)
+        input_state = GPIO.input(leftbutton) # reading the button state until pressed
         if input_state == False:
             print('left button was pressed!')
-            # Clear display.
-            disp.clear()
-            disp.display()
-            while True:
-               input_state1 = GPIO.input(rightbutton)
+            sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
+            while True: # This while loop will keep running until the right button is held down for .5 seconds
+               input_state1 = GPIO.input(rightbutton) # this will read the right button state, taking it to the if statement
                accel, mag = lsm303.read()
                # Grab the X, Y, Z components from the reading and print them out.
                accel_x, accel_y, accel_z = accel
@@ -148,7 +143,7 @@ try:
                    camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/Mar22-%s.jpg' % frame) # adding numbers to pictures
                    frame += 1
                    sleep(.5)
-               if input_state1 == False:
+               if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
                      print('right button was pressed!')
                      break
 
