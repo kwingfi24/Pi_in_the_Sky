@@ -74,8 +74,8 @@ We have planned for this project to last for 15 and a half weeks. Starting on Fe
 - [ ] Testing that prototype - Thurs, Mar 17
 - [ ] Tweaking design and/or code - Mon, Mar 21
 - [ ] Finalize CAD Design - Mon, Mar 28
-- [ ] Wiring condensed - Tues, Mar 22
-- [ ] Diagram and commented code - Tues, Mar 22
+- [x] Wiring condensed - Tues, Mar 22
+- [x] Diagram and commented code - Tues, Mar 22
 - [ ] Soldering - Mon, Mar 28
 - [ ] Build launcher prototype - Thurs, Mar 31
 - [ ] Testing launcher - Mon, Apr 4
