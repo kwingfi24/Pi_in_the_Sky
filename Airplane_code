@@ -105,12 +105,12 @@ x = padding
 font = ImageFont.load_default()
 
 sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
-
+    
+draw.text((x, top), 'Acceleration', font=font, fill=255)
 
 try:
     print('Press the left (yellow) button to start. Press the right (grey) button to stop.')
     # draw.text((x, bottom-10), 'Press the left (yellow) button to start. Press the right (grey) button to stop.',  font=font, fill=255)
-    draw.text((x, top), 'Acceleration', font=font, fill=255)
     while True:
         input_state = GPIO.input(leftbutton)
         if input_state == False:
