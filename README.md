@@ -279,9 +279,9 @@ try:
         input_state = GPIO.input(leftbutton) # reading the button state until pressed
         if input_state == False:
             print('left button was pressed!')
-            sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
-            while True: # This while loop will keep running until the right button is held down for .5 seconds
-               input_state1 = GPIO.input(rightbutton) # this will read the right button state, taking it to the if statement
+            sleep(2)  
+            while True: 
+               input_state1 = GPIO.input(rightbutton)
                accel, mag = lsm303.read()
                # Grab the X, Y, Z components from the reading and print them out.
                accel_x, accel_y, accel_z = accel
@@ -298,19 +298,18 @@ try:
                # Write readings for x and y
                draw.text((x, bottom-10), f'X: {(round (quotient(accel_x, scale), 2))}',  font=font, fill=255)
                draw.text((x+60, bottom-10), f'Z: {(round (quotient(accel_z, scale1), 2))}', font=font, fill=255)
-               # Wait half a second and repeat.
                # Display image.
                disp.image(image)
                disp.display()
                # clear just the bottom leaving the points there to look at
                draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
         
-               with PiCamera() as camera: # 
+               with PiCamera() as camera: 
                    camera.start_preview()
                    camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/Mar22-%s.jpg' % frame) # adding numbers to pictures
                    frame += 1
                    sleep(.5)
-               if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
+               if input_state1 == False: 
                      print('right button was pressed!')
                      break
 
