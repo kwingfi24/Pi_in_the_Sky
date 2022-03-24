@@ -140,8 +140,8 @@ try:
         
                with PiCamera() as camera: # 
                    camera.start_preview()
-                   camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/Mar22-%s.jpg' % frame) # adding numbers to pictures
-  4                frame += 1
+                   camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/Mar24-%s.jpg' % frame) # adding numbers to pictures
+                   frame += 1
                    sleep(.5)
                if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
                      print('right button was pressed!')
