@@ -6,6 +6,8 @@ Kaitlyn - The Accelerometer and display screen are finished as of today. They wi
 
 Christian - 
 
+
+
 ### Feb 17, 2022
 Kaitlyn - I got the camera working half way today. I will have to work over the weekend or push it over to Tuesday next week. I got the camera to take pictures consecutively every 10 seconds. This also doesn't start until a button is pressed and has a 2 second delay. The part I am struggling to do is make the pictures stop when the button is pressed again. I found a helpful website that explains a lot about the button import. (the link is https://gpiozero.readthedocs.io/en/stable/recipes.html#button)
 
