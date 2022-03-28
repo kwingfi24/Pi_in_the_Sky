@@ -113,13 +113,8 @@ Kaitlyn - Due to again being unable to solder today, I got started on the lights
 
 Christian - 
 
-### Mar 24, 2022
-Kaitlyn - 
-
-Christian - 
-
 ### Mar 28, 2022
-Kaitlyn - 
+Kaitlyn - There was more delay today. My pi is not responding with my computer, therefore enabling me from doing work. I'm getting codes sying that the device was not found or if there is one found, it is not loading or allowing me any further (not even to the login part). Instead today I will e researching and updating Github. I also will be working on code still, but wothout a way to test I don't think I'll get very far.
 
 Christian - 
 
