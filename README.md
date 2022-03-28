@@ -158,7 +158,9 @@ leds.blink()
 
 ## Test_1
 ### How did it go?
+
 ### What worked and what didn't?
+In this first flight, we did not test the lights (thing that happens at the apex of flight). This was simply due to a lack of time and problems with the pi. With information on how all other aspects worked, we will be able to move on from there. 
 ##### Code: 
 Comments are in the code
 ```
@@ -195,7 +197,7 @@ try:
         
                with PiCamera() as camera: 
                    camera.start_preview()
-                   camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/Mar22-%s.jpg' % frame) # adding numbers to pictures
+                   camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/____-%s.jpg' % frame) # adding numbers to pictures *put date where ____ is
                    frame += 1
                    sleep(.5)
                if input_state1 == False: 
