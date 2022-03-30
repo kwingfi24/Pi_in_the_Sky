@@ -2,8 +2,8 @@
 # Finished on Mar 16 (first test)
 # This will be the code that will be running.
 # It combines the parts together, including 
-# the accelerometer, OLED screen, 
-# and the camera. 
+# the accelerometer, OLED screen, and the camera. 
+# It doesn't include the lights yet.
 
 # All the imports
 
