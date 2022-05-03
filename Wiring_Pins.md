@@ -36,4 +36,4 @@ CLK -> SCL
 
 Data -> SDA
 
-RST -> 24
+RST -> Pin 24
