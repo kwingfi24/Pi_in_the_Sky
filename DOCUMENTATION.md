@@ -127,6 +127,6 @@ Kaitlyn - There was more delay today. My pi is not responding with my computer, 
 Christian - 
 
 ### May 3, 2022
-Kaitlyn - 
+Kaitlyn - Today I 
 
-Christian - 
+Christian - firgured out the placement and attachment of pieces as well as tested the wweighted plane
