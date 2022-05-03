@@ -56,9 +56,9 @@ try:
                 # change in z values
                 b = direction(height)
 
-leds.on()
+leds.value = (1, 1, 1, 1, 1, 1)
 sleep(1)
-leds.off()
+leds.value = (0, 0, 0, 0, 0, 0)
 sleep(1)
 leds.value = (1, 0, 0, 0, 0, 1)
 sleep(1)
