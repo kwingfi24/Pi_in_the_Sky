@@ -67,9 +67,9 @@ We have planned for this project to last for 15 and a half weeks. Starting on Fe
 - [X] Putting pieces of the code together - Tues, Mar 1  
 - [ ] Working with no screen - Thurs, Mar 10
 - [ ] Battery powered - Thurs, Mar 10
-- [ ] Build prototype #1 (possibly testing without all pieces)- Thurs, Mar 13
-- [ ] Testing that prototype - Tues, Mar 14
-- [ ] Tweaking design and/or code - Mon, Mar 15
+- [x] Build prototype #1 (possibly testing without all pieces)- Thurs, Mar 13
+- [x] Testing that prototype - Tues, Mar 14
+- [x] Tweaking design and/or code - Mon, Mar 15
 - [ ] Build prototype #2 / Update prototype #1 - Tues, Mar 16
 - [ ] Testing that prototype - Thurs, Mar 17
 - [ ] Tweaking design and/or code - Mon, Mar 21
@@ -77,11 +77,11 @@ We have planned for this project to last for 15 and a half weeks. Starting on Fe
 - [x] Wiring condensed - Tues, Mar 22
 - [x] Diagram and commented code - Tues, Mar 22
 - [ ] Soldering - Mon, Mar 28
-- [ ] Build launcher prototype - Thurs, Mar 31
-- [ ] Testing launcher - Mon, Apr 4
+- [x] Build launcher prototype - Thurs, Mar 31
+- [x] Testing launcher - Mon, Apr 4
 - [ ] Tweaking and retesting - Thurs, Apr 7 (Work on this until stuff is done printing/cutting)
-- [ ] Printing/Cutting - Thurs, Apr 7 (May change do to fast or slow printing/cutting)
-- [ ] Assembly - Tues, Apr 12
+- [x] Printing/Cutting - Thurs, Apr 7 (May change do to fast or slow printing/cutting)
+- [x] Assembly - Tues, Apr 12
 - [ ] Testing and small tweaks - Thurs, May 12
 - [ ] Documantation and Github organizing/update or any final presentation parts - Thurs, May 19
 - [ ] Presenting finished product - 
