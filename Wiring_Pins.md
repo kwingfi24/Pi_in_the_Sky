@@ -35,3 +35,5 @@ Vin -> 3.3 v
 CLK -> SCL
 
 Data -> SDA
+
+RST -> 24
