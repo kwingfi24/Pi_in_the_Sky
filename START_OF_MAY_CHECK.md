@@ -15,4 +15,4 @@ Sadly, the few tasks from the one month still need to be done before we can move
 
 ### Overall
 
-Overall we still need to test with the weight on the plane 
+Overall we still need to test with the weight on the plane and tweak from there. After all of the tweaking, we will need to finalize the design as well as the code, eventually ending with the presentation of the final. There is also a week where we are going to lose time due to 2 hour delays, and another week where one teammate will not be here. To get around this, we will have to work fast, but careful to not make too many mistakes as well as possibly spending extra time in the lab before, after, and during the school day.
