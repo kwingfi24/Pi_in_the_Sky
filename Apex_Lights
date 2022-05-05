@@ -3,6 +3,7 @@
 # When the plane reaches its apex, there are going to be three lights on each wing (total of 6)
 # They will be blinking in a pattern. The pattern will be 3, 1, 2, 3 and 1, 2, and all
 # setup of lights will be (3,2,1,plane,1,2,3)
+#
 
 # LED Pins 26, 19, 13, 6, 5, 22
 
@@ -40,21 +41,21 @@ GPIO.setup(leftbutton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(rightbutton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 
-try:
-    print('Press the left (yellow) button to start. Press the right (grey) button to stop.')
-    while True:
-        input_state = GPIO.input(leftbutton) # reading the button state until pressed
-        if input_state == False:
-            print('left button was pressed!')
-            while True: # This while loop will keep running until the right button is held down for .5 seconds
-                input_state1 = GPIO.input(rightbutton) # this will read the right button state, taking it to the if statement
-                accel, mag = lsm303.read()
-                # Grab the X, Y, Z components from the reading them.
-                accel_x, accel_y, accel_z = accel
-                mag_x, mag_y, mag_z = mag
+# try:
+#    print('Press the left (yellow) button to start. Press the right (grey) button to stop.')
+#    while True:
+#        input_state = GPIO.input(leftbutton) # reading the button state until pressed
+#        if input_state == False:
+#            print('left button was pressed!')
+#            while True: # This while loop will keep running until the right button is held down for .5 seconds
+ #               input_state1 = GPIO.input(rightbutton) # this will read the right button state, taking it to the if statement
+  #              accel, mag = lsm303.read()
+   #             # Grab the X, Y, Z components from the reading them.
+    #            accel_x, accel_y, accel_z = accel
+     #           mag_x, mag_y, mag_z = mag
 
                 # change in z values
-                b = direction(height)
+#                b = direction(height)
 
 leds.value = (1, 1, 1, 1, 1, 1)
 sleep(1)
