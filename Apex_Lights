@@ -72,8 +72,8 @@ leds.blink()
 pause()
 
 if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
-                     print('right button was pressed!')
-                     break
+    print('right button was pressed!')
+    break
 
 # finally:
   #  GPIO.cleanup()          
