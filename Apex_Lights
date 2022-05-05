@@ -75,5 +75,5 @@ if input_state1 == False: # when the right button is pressed and held, it will c
                      print('right button was pressed!')
                      break
 
-finally:
-    GPIO.cleanup()          
+# finally:
+  #  GPIO.cleanup()          
