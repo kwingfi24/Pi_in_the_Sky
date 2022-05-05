@@ -107,7 +107,7 @@ font = ImageFont.load_default()
     
 
 try:
-    print('Press the left (yellow) button to start. Press the right (grey) button to stop.')
+    print('Press the green button to start. Press the red button to stop.')
     while True:
         input_state = GPIO.input(leftbutton) # reading the button state until pressed
         if input_state == False:
