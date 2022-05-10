@@ -31,7 +31,7 @@ from gpiozero import Button
 
 
 # Defining things (accelerometer and OLED + one for the camera)
-# Create a LSM303 instance.
+# Create a LSM303 instance
 lsm303 = Adafruit_LSM303.LSM303()
 
 scale = int (9.81)
