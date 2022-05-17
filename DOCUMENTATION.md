@@ -133,6 +133,6 @@ Christian - firgured out the placement and attachment of pieces as well as teste
 
 
 ### May 16, 2022
-Kaitlyn - I wrtoe the code for the apex. I used this website as a resource to help me get started. With it working headless and everything being done, I hope to start soldering this week, but due to the strange schedule this week it may not happen until next week.
+Kaitlyn - I started writing the code for the apex. I used this website (https://www.codegrepper.com/code-examples/python/find+whether+a+is+greater+than+b+in+python+) as a resource to help me get started. With it working headless and everything being done other than this part, I hope to start soldering this week, but due to the strange schedule this week it may not happen until next week.
 
-Christian - 
+Christian - After testing the weighted flight, the plane flew, but not as well as we would have liked. Thinking about redoing the body of the plane, but using the same wings since the shape of those are good.
