@@ -1,0 +1,85 @@
+# Started Feb 24
+# Finished by Feb 28
+# When the plane reaches its apex, there are going to be three lights on each wing (total of 6)
+# They will be blinking in a pattern. The pattern will be 3, 1, 2, 3 and 1, 2, and all
+# setup of lights will be (3,2,1,plane,1,2,3)
+#
+
+# LED Pins 26, 19, 13, 6, 5, 22
+
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+from gpiozero import LEDBoard
+from time import sleep
+from signal import pause
+import time
+
+import Adafruit_GPIO.SPI as SPI
+import Adafruit_LSM303
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+
+# Create a LSM303 instance.
+lsm303 = Adafruit_LSM303.LSM303()
+
+scale = int (100)
+
+def quotient(accel_z, scale): 
+    return (accel_z / scale)
+
+def direction(height):
+    return (quotient(accel_z, scale) * 2.5)
+    
+prev = int (0)
+
+leds = LEDBoard(26, 19, 13, 6, 5, 22)
+
+leftbutton = 20
+rightbutton = 18
+
+GPIO.setup(leftbutton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(rightbutton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+
+try:
+   print('Press the left (yellow) button to start. Press the right (grey) button to stop.')
+   while True:
+       input_state = GPIO.input(leftbutton) # reading the button state until pressed
+       if input_state == False:
+           print('left button was pressed!')
+           while True: # This while loop will keep running until the right button is held down for .5 seconds
+               input_state1 = GPIO.input(rightbutton) # this will read the right button state, taking it to the if statement
+               accel, mag = lsm303.read()
+               # Grab the X, Y, Z components from the reading and print them out.
+               accel_x, accel_y, accel_z = accel
+               mag_x, mag_y, mag_z = mag
+               # change in x and z values
+               a = direction(x)
+               b = direction(height)
+               if (b > prev):
+                    leds.value = (1, 1, 1, 1, 1, 1)
+                    #sleep(1)
+                    leds.value = (0, 0, 0, 0, 0, 0)
+                    #sleep(1)
+                    leds.value = (1, 0, 0, 0, 0, 1)
+                    #sleep(1)
+                    leds.value = (0, 0, 1, 1, 0, 0)
+                    #sleep(1)
+                    leds.value = (0, 1, 0, 0, 1, 0)
+                    #sleep(1)
+                    leds.blink()
+                    if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
+                      print('right button was pressed!')
+                      break
+                      # Display image.
+                      disp.image(image)
+                      disp.display()
+                      # clear just the bottom leaving the points there to look at
+                      draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
+                      draw.text((x, bottom-10), f'The apex of this flight was {prev}',  font=font, fill=255)
+                    b = prev
+
+finally:
+    GPIO.cleanup()      
