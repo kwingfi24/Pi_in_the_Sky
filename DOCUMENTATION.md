@@ -129,4 +129,10 @@ Christian -
 ### May 3, 2022
 Kaitlyn - Today I 
 
-Christian - firgured out the placement and attachment of pieces as well as tested the wweighted plane
+Christian - firgured out the placement and attachment of pieces as well as tested the weighted plane
+
+
+### May 16, 2022
+Kaitlyn - I wrtoe the code for the apex. I used this website as a resource to help me get started. With it working headless and everything being done, I hope to start soldering this week, but due to the strange schedule this week it may not happen until next week.
+
+Christian - 
