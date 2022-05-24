@@ -1,9 +1,4 @@
-# Started Feb 24
-# Finished by Feb 28
-# When the plane reaches its apex, there are going to be three lights on each wing (total of 6)
-# They will be blinking in a pattern. The pattern will be 3, 1, 2, 3 and 1, 2, and all
-# setup of lights will be (3,2,1,plane,1,2,3)
-#
+# Testing for the previous statement to get it to act while at the apex 
 
 # LED Pins 26, 19, 13, 6, 5, 22
 
@@ -71,14 +66,14 @@ try:
                     #sleep(1)
                     leds.blink()
                     if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
-                      print('right button was pressed!')
-                      break
-                      # Display image.
-                      disp.image(image)
-                      disp.display()
-                      # clear just the bottom leaving the points there to look at
-                      draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
-                      draw.text((x, bottom-10), f'The apex of this flight was {prev}',  font=font, fill=255)
+                       print('right button was pressed!')
+                       break
+                       # Display image.
+                       disp.image(image)
+                       disp.display()
+                       # clear just the bottom leaving the points there to look at
+                       draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
+                       draw.text((x, bottom-10), f'The apex of this flight was {prev}',  font=font, fill=255)
                     b = prev
 
 finally:
