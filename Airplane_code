@@ -139,7 +139,7 @@ try:
                draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
                #with PiCamera() as camera: # 
                    #camera.start_preview()
-                   #camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/May16-%s.jpg' % frame) # adding numbers to pictures
+                   #camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/test-%s.jpg' % frame) # adding numbers to pictures
                    #frame += 1
                    sleep(.5)
                 if (b > prev):
