@@ -44,8 +44,8 @@ Materials
 ### Milestones
 - [x] Brainstorm ideas
 - [X] Develop an initial design (pencil and paper, CAD, etc.)
-- [ ] Construct a prototype
-- [ ] Test your design
+- [X] Construct a prototype
+- [X] Test your design
 - [ ] Refine/optimize your design
 - [ ] Present finished product
 
