@@ -141,8 +141,8 @@ try:
                    #camera.start_preview()
                    #camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/test-%s.jpg' % frame) # adding numbers to pictures
                    #frame += 1
-                   print('pic')
-                   sleep(.5)
+                print('pic')
+                sleep(.5)
                 if (b > prev):
                     leds.value = (1, 1, 1, 1, 1, 1)
                     #sleep(1)
