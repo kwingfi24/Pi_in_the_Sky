@@ -141,21 +141,21 @@ try:
                    #camera.start_preview()
                    #camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/test-%s.jpg' % frame) # adding numbers to pictures
                    #frame += 1
-                print('pic')
-                sleep(.5)
-                if (b > prev):
-                    leds.value = (1, 1, 1, 1, 1, 1)
-                    #sleep(1)
-                    leds.value = (0, 0, 0, 0, 0, 0)
-                    #sleep(1)
-                    leds.value = (1, 0, 0, 0, 0, 1)
-                    #sleep(1)
-                    leds.value = (0, 0, 1, 1, 0, 0)
-                    #sleep(1)
-                    leds.value = (0, 1, 0, 0, 1, 0)
-                    #sleep(1)
-                    leds.blink()
-                    if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
+               print('pic')
+               sleep(.5)
+               if (b > prev):
+                   leds.value = (1, 1, 1, 1, 1, 1)
+                   #sleep(1)
+                   leds.value = (0, 0, 0, 0, 0, 0)
+                   #sleep(1)
+                   leds.value = (1, 0, 0, 0, 0, 1)
+                   #sleep(1)
+                   leds.value = (0, 0, 1, 1, 0, 0)
+                   #sleep(1)
+                   leds.value = (0, 1, 0, 0, 1, 0)
+                   #sleep(1)
+                   leds.blink()
+                   if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
                         print('right button was pressed!')
                         break
                         # Display image.
