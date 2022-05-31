@@ -144,7 +144,7 @@ try:
                    #frame += 1
                print('pic')
                sleep(.5)
-               if (b > prev):
+               if (b < prev):
                    leds.value = (1, 1, 1, 1, 1, 1)
                    #sleep(1)
                    leds.value = (0, 0, 0, 0, 0, 0)
