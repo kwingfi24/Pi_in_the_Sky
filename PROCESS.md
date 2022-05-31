@@ -85,15 +85,15 @@ We have planned for this project to last for 15 and a half weeks. Starting on Fe
 - [ ] Presenting finished product - 
 
 ### Block_Code_Diagram
-##### Accelerometer and OLED Display
+#### Accelerometer and OLED Display
 Ran similarly as the Headless Accelerometer assignment, but instead of displaying the reading, it shows the parabola of the launch. Using the reading, it will “graph” the parabola by putting dots on the screen and moving a little right each time without clearing the screen. Under the graph it will be showing the highest height it’s reached so far, meaning it will stop at when it reached its climax. To do this, the bottom area will have to be cleared without erasing the graph. *If there is a way to store the acceleration readings and send them to github or something, we should try it. ***If the project  accidentally turns upside down, will this mess up the reading?
-##### Pi Camera
+#### Pi Camera
 Similarly to the Copypasta assignment, the camera will take pictures consecutively every so often (time not determined yet). It will need to take pictures without having a button pressed which is different from the Copypasta assignment. After taking the pictures, it should push them to github individually as well as come together as a gif/stop motion video. It’s also a possibility to take a video alone rather than a bunch of individual pictures. The camera should only start recording or taking pictures when the project is being thrown to when it hits the ground. This could be done with a button that starts the camera when pushed and  then stops the camera when that same button is pushed again.
-##### LEDs
+#### LEDs
 These will be used as indicators. The first LED will show that the power is on. The second one will start the running of the camera and accelerometer/graphing on the OLED. The final one will indicate that the shutdown button has been pressed (this one might not be used). 
-##### Servo
+#### Servo
 This will act as a way to open the door(s) on the bottom of the pi at the apex. This will be pretty easy to set up. We do need to take weight into consideration along with the possibility of the objects falling out interfering with the fall of the actual pi. The door will need to be open long enough to drop, but be closed by the time it hits the ground. This could be difficult depending on how fast the project will fall. Since the plane/glider shape and appearance I believe it would be funny if we had soldiers or people falling out with parachutes.
-##### Shutdown Button
+#### Shutdown Button
 This button will shutdown the pi before turning it off. A button will be needed because of the lack of a screen and keyboard.
 #### On/Off Switch
 Obviously turns the project off and will need to connect and unconnect the battery to the rest of the device.
@@ -138,22 +138,22 @@ Materials
 - Cardboard
 
 ### Pictures/Diagrams
-##### Design
+#### Design
 
 Link to Onshape Document: https://cvilleschools.onshape.com/documents/492561168bf6b91a97d77a47/w/45d7efb3da141b22b711ac96/e/4b3a4ccdc809ca3a080ae7f4
-#### In Onshape
+### In Onshape
 
-#### Version 3 (Final as of right now)
+### Version 3 (Final as of right now)
 
 ![Screenshot 2022-03-03 9 52 52 AM](https://user-images.githubusercontent.com/60272021/156589460-5ff91dea-edbb-4563-aca9-adfe65bd77a1.png)
 
-#### Laser Cut
+### Laser Cut
 
-##### Version 1
+#### Version 1
 
 ![Screenshot 2022-03-03 9 59 49 AM](https://user-images.githubusercontent.com/60272021/156590828-7085db7d-46a6-4710-9ebc-519f81f610b8.png)
 
-##### Version 2 - Added a second set of wings
+#### Version 2 - Added a second set of wings
 
 ![Screenshot 2022-03-03 10 00 05 AM](https://user-images.githubusercontent.com/60272021/156590900-1bf0d4be-968a-4302-82c7-9ed34e270bba.png)
 
@@ -161,12 +161,12 @@ Final Printed - Angled and curved wings
 
 ![Screenshot 2022-03-03 10 24 57 AM](https://user-images.githubusercontent.com/60272021/156595463-9ebacbb5-0c09-4814-a178-cf23a2143108.png)
 
-##### Wiring
+#### Wiring
 Wiring - Better pictures/diagrams will come
 
 ![Screenshot 2022-03-03 9 36 39 AM](https://user-images.githubusercontent.com/60272021/156586159-3fd2d8d5-d540-4465-90f7-1111caf976b9.png)
 
-##### Code snipets
+#### Code snipets
 
 Accelerometer/OLED Screen
 ```
