@@ -156,7 +156,6 @@ try:
                    leds.value = (0, 1, 0, 0, 1, 0)
                    #sleep(1)
                    leds.blink()
-                   b = prev
                    if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
                         print('right button was pressed!')
                         break
@@ -166,6 +165,7 @@ try:
                         # clear just the bottom leaving the points there to look at
                         draw.rectangle((0,bottom-20,width,bottom), outline=0, fill=0)
                         draw.text((x, bottom-10), f'The apex of this flight was ___',  font=font, fill=255)
+               b = prev
                if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
                         print('right button was pressed!')
                         break
