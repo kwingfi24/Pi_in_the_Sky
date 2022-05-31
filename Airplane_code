@@ -112,7 +112,7 @@ try:
     while True:
         input_state = GPIO.input(leftbutton) # reading the button state until pressed
         if input_state == False:
-            print('left button was pressed!')
+            print('start button was pressed!')
             sleep(2) # this will give us 2 seconds to get the plane in the air before the accessories start 
             while True: # This while loop will keep running until the right button is held down for .5 seconds
                input_state1 = GPIO.input(rightbutton) # this will read the right button state, taking it to the if statement
@@ -158,7 +158,7 @@ try:
                    #sleep(1)
                    leds.blink()
                    if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
-                        print('right button was pressed!')
+                        print('stop button was pressed!')
                         break
                         # Display image.
                         disp.image(image)
@@ -168,7 +168,7 @@ try:
                         draw.text((x, bottom-10), f'The apex of this flight was ___',  font=font, fill=255)
                b = prev
                if input_state1 == False: # when the right button is pressed and held, it will come here and stop the code
-                        print('right button was pressed!')
+                        print('stop button was pressed!')
                         break
                         # Display image.
                         disp.image(image)
