@@ -52,6 +52,7 @@ def direction(height):
 # Camera
 frame = 1
 
+prev = 0
 
 # Pins for each thing
 
