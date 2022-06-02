@@ -239,8 +239,11 @@ We need to learn a bit more about how the accelerometer and OLED display work. G
 The definition of success for this project will be growing and learning about things we didn’t previously know, having a working project by the middle of May, and getting some awesome pictures from the flight.
 
 ### Diagram
+Paper:
 ![image](https://user-images.githubusercontent.com/60272021/153009169-bfc58da1-c097-4e1e-9e28-fedd38d4bfe2.png)
 
+Onshape:
+![pic of plane feb 10](https://user-images.githubusercontent.com/60272021/160408978-b35b7c67-3a37-4182-a20d-794159987845.png)
 ## Design_Decisions
 
 
@@ -284,12 +287,36 @@ We did not meet this goal...
 - [ ] Presenting finished product - Thurs, May 26
 ### Monthly Check-in
 #### March - 1 Month
-### What have we done?
+What have we done?
+
 In this month we have made a design for the plane and have printed multiple to test the flight capability of it. There have been a total of 3 versions of the plane that change size, center of gravity points, and angles of wings. We have also finished most of the code other than a few things. The lights have been figured out, the accelerometer/OLED screen is done, and most of the wiring is pretty final. So far we have been able to stay mostly on schedule, but we have run into a few bumps where we had to spend an extra bit of time on some things. We have found multiple helpful websites that have helped along the way.
-### What still needs to be done?
+What still needs to be done?
+
+What still needs to be done?
+
 A few tasks still need to be done before we can move onto the testing and refining stages of the project. On the coding/wiring side of things, the code working together and without being attached to a computer still needs to be figured out. Making it battery operated and soldering pieces together also needs to be completed within the next few weeks.
-### What has changed?
+What has changed?
+
+What has changed?
+
 The plane is no longer closed, rather it is two sides with an open middle. It is also going to be made only out of cardboard to improve durability and weight. The wings have also changed a lot. There are now two sets of wings. In the final design (for now) both sets of wings are curved and angled. We are no longer going to be dropping things from the plane. There will only be lights as of right now. We got rid of the things falling to get rid of some of the weight and in the interest of time. We could possibly add this or another thing back to the project if time allows.
+#### May - 2 Months (This is after the one month break for Onshape)
+What still need to be done?
+
+Design/Cut
+
+Until testing, there isn't a ton we can do here, but we possibly will need to change things depending on how it works while testing. It is very possible that a design change will be necessary. We also need to figure out placement and attachment of the pieces. 
+
+Coding/Wiring
+
+Sadly, the few tasks from the one month still need to be done before we can move onto the testing and refining stages of the project. We had trouble with the pi and it hung us up, but the code is complete. On the coding/wiring side of things, the code working together and without being attached to a computer still needs to be figured out. Making it battery operated and soldering pieces together also needs to be completed within the next few weeks.
+
+Overall
+
+Overall we still need to test with the weight on the plane and tweak from there. After all of the tweaking, we will need to finalize the design as well as the code, eventually ending with the presentation of the final. There is also a week where we are going to lose time due to 2 hour delays, and another week where one teammate will not be here. To get around this, we will have to work fast, but careful to not make too many mistakes as well as possibly spending extra time in the lab before, after, and during the school day.
 ### Day to Day Progress
 We kept track of what we were doing. For a closer look at that you can go here: https://github.com/kwingfi24/Pi_in_the_Sky/blob/main/DAILY_DOCUMENTATION.md
+
 ## Problems_and_Errors
+
+The planes keep flipping going front first. There was too much weight in the front, so we changed the design. We are trying to distribute the weight evenly, but without the pi and everything inside, it is a bit difficult to gauge. We are waiting to change it anymore until we are able to test everything together for the first time. The pi camera gave us a lot of trouble. I tried many different ways and still have not settled on a particular one. 
