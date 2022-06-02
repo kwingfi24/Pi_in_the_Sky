@@ -244,8 +244,10 @@ Paper:
 
 Onshape:
 ![pic of plane feb 10](https://user-images.githubusercontent.com/60272021/160408978-b35b7c67-3a37-4182-a20d-794159987845.png)
+
 ## Design_Decisions
 
+The plane is no longer closed, rather it is two sides with an open middle. It is also going to be made only out of cardboard to improve durability and weight. The wings have also changed a lot. There are now two sets of wings. In the final design (for now) both sets of wings are curved and angled. We are no longer going to be dropping things from the plane. There will only be lights as of right now. We got rid of the things falling to get rid of some of the weight and in the interest of time. We could possibly add this or another thing back to the project if time allows.
 
 ## Process_and_Schedule
 ### Milestones
@@ -290,16 +292,11 @@ We did not meet this goal...
 What have we done?
 
 In this month we have made a design for the plane and have printed multiple to test the flight capability of it. There have been a total of 3 versions of the plane that change size, center of gravity points, and angles of wings. We have also finished most of the code other than a few things. The lights have been figured out, the accelerometer/OLED screen is done, and most of the wiring is pretty final. So far we have been able to stay mostly on schedule, but we have run into a few bumps where we had to spend an extra bit of time on some things. We have found multiple helpful websites that have helped along the way.
-What still needs to be done?
 
 What still needs to be done?
 
 A few tasks still need to be done before we can move onto the testing and refining stages of the project. On the coding/wiring side of things, the code working together and without being attached to a computer still needs to be figured out. Making it battery operated and soldering pieces together also needs to be completed within the next few weeks.
-What has changed?
 
-What has changed?
-
-The plane is no longer closed, rather it is two sides with an open middle. It is also going to be made only out of cardboard to improve durability and weight. The wings have also changed a lot. There are now two sets of wings. In the final design (for now) both sets of wings are curved and angled. We are no longer going to be dropping things from the plane. There will only be lights as of right now. We got rid of the things falling to get rid of some of the weight and in the interest of time. We could possibly add this or another thing back to the project if time allows.
 #### May - 2 Months (This is after the one month break for Onshape)
 What still need to be done?
 
@@ -319,4 +316,51 @@ We kept track of what we were doing. For a closer look at that you can go here: 
 
 ## Problems_and_Errors
 
-The planes keep flipping going front first. There was too much weight in the front, so we changed the design. We are trying to distribute the weight evenly, but without the pi and everything inside, it is a bit difficult to gauge. We are waiting to change it anymore until we are able to test everything together for the first time. The pi camera gave us a lot of trouble. I tried many different ways and still have not settled on a particular one. 
+1 - The planes keep flipping going front first. There was too much weight in the front, so we changed the design. We are trying to distribute the weight evenly, but without the pi and everything inside, it is a bit difficult to gauge. We are waiting to change it anymore until we are able to test everything together for the first time. 
+
+2 - The pi camera gave us a lot of trouble. I tried many different ways and settled on taken one picture at a time while having it in a loop. 
+
+
+Previous:
+```
+with picamera.PiCamera() as camera: # this will take 13 photos within 6 seconds
+  camera.start_preview()
+  time.sleep(2) # this will give us 2 seconds to get the plane in the air before it starts taking pictures
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5) # this will give us half a second before the next picture
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5)
+  camera.capture('img{counter:02d}.jpg')
+  time.sleep(.5) # half a second before the program stops
+  camera.capture('img{counter:02d}.jpg') #last picture
+```
+
+
+
+Now: (other stuff has been cut out of the while loop to just show the camera)
+```
+       while True: 
+            with PiCamera() as camera: 
+                   camera.start_preview()
+                   camera.capture('/home/pi/Documents/Pi_in_the_Sky/pics/____-%s.jpg' % frame) # adding numbers to pictures *put date where ____ is
+                   frame += 1
+                   sleep(.5)
+```
+
+3 - There ws a struggle with the buttons, but they were simple fixes such as the wiring or button not being in all the way.
+
+4 - My pi wasn't responding with my computer, therefore enabling me from doing work. I was codes sying that the device was not found or if there is one found, it was not loading or allowing me any further (not even to the login part). I eventually had to use SSH.
+
+(After waiting 5 minutes and pressing enter every so often)
+![Screenshot 2022-03-28 9 15 57 AM](https://user-images.githubusercontent.com/60272021/160406151-7566cee2-0ba1-4674-9e5a-26d3312d40f6.png)
+
+(Another attempt where the pi isn't even recognized)
+![Screenshot 2022-03-28 9 16 35 AM](https://user-images.githubusercontent.com/60272021/160406319-08b5e3eb-57d3-4544-9cc1-b9a77ec8577e.png)
