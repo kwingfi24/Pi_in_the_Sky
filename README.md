@@ -1,5 +1,5 @@
 # Pi_in_the_Sky
-Engineering 4 - Project
+Engineering 4 - Project Documentation
 
 ## Table of Contents
 * [Bill_of_Materials](#Bill_of_Materials)
@@ -11,7 +11,6 @@ Engineering 4 - Project
 * [Design_Decisions](#)
 * [Process_and_Schedule](#)
 * [Problems_and_Errors](#)
-* [](#)
 ---
 
 ### Bill_of_Materials
