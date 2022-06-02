@@ -39,6 +39,8 @@ Link to Onshape Document: https://cvilleschools.onshape.com/documents/492561168b
 ![Screenshot 2022-03-03 10 24 57 AM](https://user-images.githubusercontent.com/60272021/156595463-9ebacbb5-0c09-4814-a178-cf23a2143108.png)
 
 ## Diagram_of_Circuit
+![Screenshot 2022-06-02 10 28 17 AM](https://user-images.githubusercontent.com/60272021/171652804-9e8845a0-1033-4325-bc07-c98eba40f952.png)
+
 
 ## Commented_Code
 ```
